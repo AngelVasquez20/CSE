@@ -36,3 +36,112 @@ car_name = "Wiebe mobile"  # String
 car_type = "Tesla"  # String
 car_cylinders = 16  # Integer
 car_miles_per_gallon = 0.01  # Float
+
+print("I have a car called %s. It's pretty nice." % car_name)
+print("It has %d cylinders, but gets %f mpg" % (car_cylinders, car_miles_per_gallon))
+# Taking Input
+name = input("What is your name? ")
+print("Hello %s" % name)
+age = input("How old are you?")
+print("%s? You belong in a museum!" % age)
+# Recasting
+real_age = int(input("How old are you again? "))
+hidden_age = real_age + 5
+print(hidden_age)
+"""
+
+# Multi-line Comments
+
+"""
+This is a multi-line comment
+anything in between them is automatically commented out.
+"""
+
+
+# Defining Functions
+def say_it():
+    print("Hello World!")
+
+
+say_it()
+say_it()
+say_it()
+
+
+# f(x) = 2x + 3
+def f(x):
+    print(2*x + 3)
+
+
+f(1)
+f(5)
+f(5000)
+
+
+def distance(x1, y1, x2, y2):
+    dist = ((x2-x1)**2 + (y2-y1)**2)**(1/2)
+    print(dist)
+
+
+distance(0, 0, 3, 4)
+distance(0, 0, 5, 12)
+
+# For loops
+for i in (1, 2, 3):
+    say_it()
+
+for i in range(5):  # Range(5) gives the numbers 0-4
+    f(i)
+
+for i in range(5):
+    print(i**2)
+
+# While loops
+a = 0
+while a < 10:
+    print(a)
+    a += 1  # This is the same as a = a + 1
+
+
+"""
+Hints for loops:
+For loops - Use when you know EXACTLY how many iterations
+While loops - Use when you DON'T know how many iterations
+"""
+
+
+# Control Statements (If statements)
+sunny = False
+if sunny:
+    print("Go outside")
+
+
+def grade_calc(percentage):
+    if percentage >= 90:
+        return "A"
+    elif percentage >= 80:
+        return "B"
+    elif percentage >= 70:
+        return "C"
+    elif percentage >= 60:
+        return "D"
+    else:
+        return "F"
+
+
+your_grade = grade_calc(82)
+print(your_grade)
+
+# Random numbers
+import random  # This should be on line 1
+print(random.randint(0, 100))
+
+# Equality Statements
+print(5 > 3)
+print(5 >= 3)
+print(3 == 3)
+print(3 != 4)
+"""
+a = 3  # A is set to 3
+a == 3 # Is a equal to 3?
+"""
