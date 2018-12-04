@@ -1,4 +1,4 @@
-print(3 !=4)
+print(3 != 4)
 """
 a = 3  # A is set to 3
 a == 3 # Is a equal to 3?
@@ -20,19 +20,20 @@ print("The length of the list is %d" % len(fruit))
 fruit[8] = 'Banana'
 print(fruit)
 
+
 # Looping through Lists
 for item in fruit:
     print(item)
 
 icecreamflavors = ["vanilla", "strawberry", "mango", "pineapple"]
-print (icecreamflavors)
+print(icecreamflavors)
 
 icecreamflavors[2] = "mango"
 print("The last thing in the lists is %s" % icecreamflavors[len(icecreamflavors) - 1])
 
 food_lists = ["pizza", "tamales", "tacos", "pie", "enchiladas", "burrito",
               "sushi", "poke", "flan", "poutine", "noodles", "chicken", "chili", "Hot wings", "salmons", "chip",
-              "lasagna", "soup", "fettuccine","salad", "carne asada"]
+              "lasagna", "soup", "fettuccine", "salad", "carne"]
 
 # Slicing
 print(food_lists[2:5])
@@ -67,7 +68,6 @@ new_lists = ["pineapple", "pizza", "tacos"]
 
 food_lists.insert(3, "soup")
 print(food_lists)
-
 food_lists.remove("pizza")
 
 
@@ -87,7 +87,7 @@ list1 = list(string1)
 print(list1)
 
 # HangMan hints
-for i in range(len(list1)): # The number i goes through all indices
+for i in range(len(list1)):   # The number i goes through all indices
     if list1[i] == "u":  # if we find "u"
         list1.pop(i)  # Remove the i-th index
         list1.insert(i, "*")  # put a * there instead
@@ -100,7 +100,6 @@ print("".join(list1))
 # a**2 + b**2 = c**2
 def pythagorean(a, b):
     return (a**2 + b**2) ** (1/2)
-
 
 print(pythagorean(3, 4))
 
