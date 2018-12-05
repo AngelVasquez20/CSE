@@ -12,11 +12,11 @@
     <SUITE FILE_PATH="coverage/CSE$Basic_Pythin_Notes.coverage" NAME="Basic Pythin Notes Coverage Results" MODIFIED="1543530249571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Notes.coverage" NAME="Notes Coverage Results" MODIFIED="1543962957776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Lucky_7_s.coverage" NAME="Lucky 7's Coverage Results" MODIFIED="1543268983498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Challenge_1.coverage" NAME="Challenge 1 Coverage Results" MODIFIED="1543962334697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez_Challenges.coverage" NAME="Angel Vasquez-Challenges Coverage Results" MODIFIED="1543962659594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Challenge_1.coverage" NAME="Challenge 1 Coverage Results" MODIFIED="1544047745929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez_Challenges.coverage" NAME="Angel Vasquez-Challenges Coverage Results" MODIFIED="1544049411938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Fix_It.coverage" NAME="Fix It Coverage Results" MODIFIED="1543874031234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Guess_Game.coverage" NAME="Guess Game Coverage Results" MODIFIED="1542407310013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez_Mad_Libs_2.coverage" NAME="Angel Vasquez-Mad Libs 2 Coverage Results" MODIFIED="1543960211627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez_Mad_Libs_2.coverage" NAME="Angel Vasquez-Mad Libs 2 Coverage Results" MODIFIED="1544049006785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,7 +36,7 @@
     <session id="-169559174">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.38" value="2" />
@@ -45,35 +45,38 @@
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.86" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitattributes" value="1" />
           <entry key="pstat" value="1" />
-          <entry key="py" value="15" />
+          <entry key="py" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Profiler Session" value="1" />
-          <entry key="Python" value="12" />
+          <entry key="Python" value="16" />
           <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="6413" />
+          <entry key="dummy" value="31" />
+          <entry key="py" value="6813" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="6413" />
+          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Python" value="6813" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -100,19 +103,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lucky 7's.py">
+        <entry file="file://$PROJECT_DIR$/Angel Vasquez-Lucky 7's.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+            <state relative-caret-position="-562">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
                 <marker date="1543962957682" expanded="true" signature="2660:2665" ph="..." />
               </folding>
@@ -121,10 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes/Fix It.py">
+        <entry file="file://$PROJECT_DIR$/notes/Angel Vasquez-Fix It.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="884">
+              <caret line="52" column="56" lean-forward="true" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -134,11 +137,27 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Angel Vasquez-Challenges.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="306">
+              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding>
+                <marker date="1544049109388" expanded="true" signature="167:168" ph="..." />
+                <marker date="1544049109388" expanded="true" signature="213:218" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenge 1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="25" />
+              <folding>
+                <marker date="1543962007972" expanded="true" signature="38:71" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,9 +185,9 @@
         <option value="$PROJECT_DIR$/notes/Fix It.py" />
         <option value="$PROJECT_DIR$/Challenge 2.py" />
         <option value="$PROJECT_DIR$/Challenge 1.py" />
+        <option value="$PROJECT_DIR$/notes/Notes.py" />
         <option value="$PROJECT_DIR$/Angel Vasquez-Mad Libs 2.py" />
         <option value="$PROJECT_DIR$/Angel Vasquez-Challenges.py" />
-        <option value="$PROJECT_DIR$/notes/Notes.py" />
       </list>
     </option>
   </component>
@@ -195,6 +214,11 @@
             <path>
               <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSE" type="462c0819:PsiDirectoryNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Notes">
+  <component name="RunManager" selected="Python.Angel Vasquez-Challenges">
     <configuration name="Angel Vasquez-Challenges" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,7 +327,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/Fix It.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\bk9x\Documents\GitHub\CSE\notes\Angel Vasquez-Fix It.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -343,10 +367,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Notes" />
         <item itemvalue="Python.Angel Vasquez-Challenges" />
-        <item itemvalue="Python.Challenge 1" />
         <item itemvalue="Python.Angel Vasquez-Mad Libs 2" />
+        <item itemvalue="Python.Challenge 1" />
+        <item itemvalue="Python.Notes" />
         <item itemvalue="Python.Fix It" />
       </list>
     </recent_temporary>
@@ -377,13 +401,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49731183" visible="true" weight="0.28668684" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49731183" visible="true" weight="0.2912254" />
       <window_info id="Favorites" order="1" sideWeight="0.50268817" side_tool="true" weight="0.27" />
       <window_info id="Structure" order="2" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984448" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4992224" weight="0.32972974" />
@@ -421,7 +445,7 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic Pythin Notes.py">
+    <entry file="file://$PROJECT_DIR$/Challenge 2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Guess Game.py">
@@ -431,50 +455,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lucky 7's.py">
+    <entry file="file://$PROJECT_DIR$/notes/Angel Vasquez-Fix It.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="884">
+          <caret line="52" column="56" lean-forward="true" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Fix It.py">
+    <entry file="file://$PROJECT_DIR$/Angel Vasquez-Lucky 7's.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angel Vasquez-Mad Libs 2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic Pythin Notes.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Challenge 1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="25" />
           <folding>
             <marker date="1543962007972" expanded="true" signature="38:71" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenge 2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Angel Vasquez-Mad Libs 2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Notes.py">
+    <entry file="file://$PROJECT_DIR$/Angel Vasquez-Challenges.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        <state relative-caret-position="306">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
-            <marker date="1543962957682" expanded="true" signature="2660:2665" ph="..." />
+            <marker date="1544049109388" expanded="true" signature="167:168" ph="..." />
+            <marker date="1544049109388" expanded="true" signature="213:218" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Angel Vasquez-Challenges.py">
+    <entry file="file://$PROJECT_DIR$/notes/Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="-562">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding>
+            <marker date="1543962957682" expanded="true" signature="2660:2665" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
