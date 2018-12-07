@@ -5,7 +5,7 @@ def challenge1(firstname, lastname):
     print(lastname, firstname)
 
 
-challenge1("John", "Doe")
+challenge1("Angel", "Vasquez")
 
 
 # Challenge number 4
@@ -20,7 +20,7 @@ def challenge4(number):
         return "positive"
 
 
-print(challenge4(10))
+print(challenge4(6))
 
 
 # Challenge number 3
@@ -46,11 +46,8 @@ print(challenge5(6))
 
 # Challenge number 6
 
-
 def challenge6(radius):
     return 4/3 * 3.14 * radius ** 3
 
 
 print(challenge6(7))
-
-volume1 = ("a", "e", "i")
