@@ -68,7 +68,8 @@ new_lists = ["pineapple", "pizza", "tacos"]
 
 food_lists.insert(3, "soup")
 print(food_lists)
-food_lists.remove("pizza")
+new_lists.remove("pizza")
+print(food_lists)
 
 
 # Finding things in a lists
@@ -102,4 +103,3 @@ def pythagorean(a, b):
     return (a**2 + b**2) ** (1/2)
 
 print(pythagorean(3, 4))
-
