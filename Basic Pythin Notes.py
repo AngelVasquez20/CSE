@@ -38,8 +38,11 @@ car_type = "Tesla"  # String
 car_cylinders = 16  # Integer
 car_miles_per_gallon = 0.01  # Float
 
+
 print("I have a car called %s. It's pretty nice." % car_name)
 print("It has %d cylinders, but gets %f mpg" % (car_cylinders, car_miles_per_gallon))
+
+
 # Taking Input
 name = input("What is your name? ")
 print("Hello %s" % name)
