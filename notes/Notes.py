@@ -91,7 +91,7 @@ print(list1)
 for i in range(len(list1)):   # The number i goes through all indices
     if list1[i] == "u":  # if we find "u"
         list1.pop(i)  # Remove the i-th index
-        list1.insert(i, "*")  # put a * there instead
+        list1.insert(i, "_")  # put a * there instead
 
 # CHANGING BACK INTO A STARING (LIST→STRING)
 print("".join(list1))
