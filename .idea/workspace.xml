@@ -40,7 +40,7 @@
     <session id="-169559174">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.26" value="1" />
@@ -432,7 +432,7 @@
       <window_info id="Structure" order="2" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984448" visible="true" weight="0.3327869" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984448" weight="0.3327869" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

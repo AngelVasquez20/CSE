@@ -1,21 +1,29 @@
 import random
-guesses = 8
-words = ["Apple", "Word", "Backpack", "Pencil", "Legs", "Mouse", "Dog", "Cat", "Guitar", "Shoe", "I love dogs!"]
-random = random.choice(words)
+guess = 8
+answerlist = ["Apple", "Word", "Backpack", "Pencil", "Legs", "Mouse", "Dog", "Cat", "Guitar", "Shoe", "I love dogs!"]
+random = random.choice(answerlist)
+answer = list(answerlist[0])
+letters_guessed = []
+display = []
+display.extend(answer)
 
-answer = list(words[0])
-screen = []
-screen.extend(words)
-for i in range(len(screen)):
-    screen[i] = "_"
-print(' '.join(screen))
+for i in range(len(display)):
+    display[i] = "_"
+
+print(' '.join(display))
 print()
-while guesses < len(words):
+
+count = 0
+
+while count < len(answer):
     guess = input("Guess a letter: ")
     guess = guess.lower()
-for i in range(len(answer)):
-    if answer[i] == guesses:
-        screen[i] = guesses
-        guesses = guesses - 1
+    print(count)
 
-print("You Have Guessed the answer")
+for i in range(len(answer)):
+    if answer[i] == guess:
+        display[i] = guess
+        count = count + 1
+
+print(' '.join(display))
+print()
