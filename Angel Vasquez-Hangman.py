@@ -2,10 +2,9 @@ import random
 guess = 8
 answerlist = ["Apple", "Word", "Backpack", "Pencil", "Legs", "Mouse", "Dog", "Cat", "Guitar", "Shoe", "I love dogs!"]
 random = random.choice(answerlist)
-answer = list(answerlist[0])
-letters_guessed = []
+
 display = []
-display.extend(answer)
+display.extend(random)
 
 for i in range(len(display)):
     display[i] = "_"
@@ -15,13 +14,13 @@ print()
 
 count = 0
 
-while count < len(answer):
+while count < len(random):
     guess = input("Guess a letter: ")
     guess = guess.lower()
     print(count)
 
-for i in range(len(answer)):
-    if answer[i] == guess:
+for i in range(len(random)):
+    if random[i] == guess:
         display[i] = guess
         count = count + 1
 
