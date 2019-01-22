@@ -104,11 +104,3 @@ def pythagorean(a, b):
 
 
 print(pythagorean(3, 4))
-
-
-for i in range(len(random)):
-    if random[i] == guess:
-        display[i] = guess
-        count = count + 1
-print(' '.join(display))
-print()
