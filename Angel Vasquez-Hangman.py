@@ -9,15 +9,12 @@ for i in range(len(display)):
 print(' '.join(display))
 print()
 
-while guess < len(random):
+while guess < len(Words):
     guess = input("Guess a letter: ")
     guess = guess.lower()
     print(guess)
 
-for i in range(len(random)):
-    if random[i] == guess:
+for i in range(len(Words)):
+    if Words[i] == guess:
         display[i] = guess
         guess = guess - 1
-
-if guess == 0:
-    input("You ran out of chances")

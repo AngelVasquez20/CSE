@@ -104,3 +104,32 @@ def pythagorean(a, b):
 
 
 print(pythagorean(3, 4))
+
+
+print(' '.join(display))
+print()
+
+while guess > len(Words):
+    guess = input("Guess a letter: ")
+    guess = guess.lower()
+    print(guess)
+
+string = Words
+list1 = list(string)
+for i in range(len(Words)):
+    if list1[i] == Words:
+        list1.pop(i)
+        list1.insert(i, "_")
+
+    if Words[i] == guess:
+        display[i] = guess
+        guess = guess - 1
+
+print(' '.join(display))
+print()
+
+if guess == 0:
+    input("You ran out of chances")
+
+if guess > 8:
+    input("You have won")
