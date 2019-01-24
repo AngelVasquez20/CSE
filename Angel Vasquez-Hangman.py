@@ -8,8 +8,8 @@ for i in range(len(display)):
     display[i] = "_"
 print(' '.join(display))
 print()
-
-while guess < len(Words):
+count = 0
+while count < len(Words):
     guess = input("Guess a letter: ")
     guess = guess.lower()
     print(guess)
@@ -17,4 +17,4 @@ while guess < len(Words):
 for i in range(len(Words)):
     if Words[i] == guess:
         display[i] = guess
-        guess = guess - 1
+        count = count + 1
