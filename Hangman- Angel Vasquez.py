@@ -1,14 +1,24 @@
 import random
 guess = 8
-puncuation = string.punctuation
 string =
 list1 = list(string)
 print(list1)
 alphabet = list(string.ascii_letters)
-words = ["Apple", "Word", "Backpack", "Pencil", "Legs", "Mouse", "Dog", "Cat", "Myth", "Shoe", "I love dogs!"]
+words = ["Apple",
+         "Word",
+         "Backpack",
+         "Pencil",
+         "Legs",
+         "Mouse",
+         "Dog",
+         "Cat",
+         "Myth",
+         "Shoe",
+         "I love dogs!"]
 random = random.choice(words)
 letters_guessed = []
 
+win = False
 for i in range(len(words)):
     if words[i] in alphabet:
         list1.pop(i)
