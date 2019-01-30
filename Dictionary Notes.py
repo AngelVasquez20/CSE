@@ -72,3 +72,22 @@ complex_dictionary = {
          ]
     }
 }
+
+
+print(complex_dictionary["NY"]["CITIES"][0])
+print(complex_dictionary["NJ"]["CITIES"][2])
+print(complex_dictionary.keys())
+print(complex_dictionary.items())
+
+
+for key, value in complex_dictionary.items():
+    print(key)
+    print(value)
+    print("-" * 20)
+
+for state, info in complex_dictionary.items():
+    for title, desc in info.items():
+        print(title)
+        print(desc)
+        print("-" * 20)
+    print('=' * 20)
