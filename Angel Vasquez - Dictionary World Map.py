@@ -1,25 +1,26 @@
 world_map = {
-    'R19A': {
-        'NAME': "Wiebe's Classroom",
+    'Sheriff dept': {
+        'NAME': "sheriff's office (Safe House)",
         'DESCRIPTION': "This is the classroom that you are in right "
                        "now. It has two exits to the north side.",
         'PATHS': {
-            'NORTH': "PARKING_LOT"
+            'SOUTH': "PARKING_LOT"
         }
     },
     'PARKING_LOT': {
-        'NAME': "The Edison Parking Lot",
+        'NAME': "The Sheriff dept's Parking Lot",
         'DESCRIPTION': "There are cars parked here. To "
-                       "the south is Mr. Wiebe's room",
+                       "the north is the Sheriff's office",
         'PATHS': {
-            'SOUTH': "R19A"
+            'NORTH': "Sheriff dept"
         }
     }
 }
 
+
 # Other Variables
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
-current_node = world_map['R19A']   # this is your current location
+current_node = world_map['Sheriff dept']   # this is your current location
 playing = True
 
 # Controller
