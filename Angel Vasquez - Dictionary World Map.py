@@ -15,6 +15,10 @@ world_map = {
             'NORTH': "Sheriff dept"
         }
     }
+    'FIRST_CLUE': {
+        'NAME': "Great You found a clue. The clue is "
+        'DESCRIPTION'
+    }
 }
 
 
