@@ -1,24 +1,130 @@
 world_map = {
-    'Sheriff dept': {
-        'NAME': "sheriff's office (Safe House)",
+    'YOUR_OFFICE': {
+        'NAME': "Your Office",
         'DESCRIPTION': "This is the classroom that you are in right "
                        "now. It has two exits to the north side.",
         'PATHS': {
-            'SOUTH': "PARKING_LOT"
+            'SOUTH': "RANDOM_OFFICE",
+            'EAST': "CLUE_ROOM"
         }
     },
-    'PARKING_LOT': {
+    'RANDOM_OFFICE': {
         'NAME': "The Sheriff dept's Parking Lot",
         'DESCRIPTION': "There are cars parked here. To "
                        "the north is the Sheriff's office",
         'PATHS': {
+            'EAST': "",
             'NORTH': "Sheriff dept"
         }
-    }
-    'FIRST_CLUE': {
-        'NAME': "Great You found a clue. The clue is "
-        'DESCRIPTION'
-    }
+    },
+    'CLUE_ROOM': {
+        'NAME': "Great You found a clue. The clue that will be given is to go South 2 times.",
+        'DESCRIPTION': "This room is where the clue is hidden.",
+
+        'PATHS': {
+            'WEST': "Sheriff dept",
+            'SOUTH': ""
+
+        }
+    },
+    'WEIGHT_ROOM': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+
+    },
+    'BREAK_ROOM': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'TRAINING_ROOM': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'CLUE_ROOM2': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        "PATHS": {
+
+        }
+    },
+    'CLUE_ROOM3': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        "PATHS": {
+
+        }
+    },
+    'BREAK_ROOM2': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'CLUE_ROOM4': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'OFFICE': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'MAIN_OFFICE': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'FRONT_DOOR': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'BACK_DOOR': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'PARKING_LOT': {
+        'NAME': "",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+
+        }
+    },
+    'BACK_OFFICE_DOOR':
 }
 
 
