@@ -4,133 +4,153 @@ world_map = {
         'DESCRIPTION': "This is the classroom that you are in right "
                        "now. It has two exits to the north side.",
         'PATHS': {
-            'SOUTH': "RANDOM_OFFICE",
-            'EAST': "CLUE_ROOM"
+            'SOUTH': "CO_WORKER_OFFICE",
+            'EAST': "CLUE_ROOM",
+            'WEST': "WEIGHT_ROOM",
         }
     },
-    'RANDOM_OFFICE': {
-        'NAME': "The Sheriff dept's Parking Lot",
+    'CO_WORKER_OFFICE': {
+        'NAME': "This is your co- worker's office",
         'DESCRIPTION': "There are cars parked here. To "
                        "the north is the Sheriff's office",
         'PATHS': {
-            'EAST': "",
-            'NORTH': "Sheriff dept"
+            'EAST': "BREAK_ROOM",
+            'NORTH': "YOUR_OFFICE",
+            'WEST': "BREAK_ROOM2",
+            'SOUTH': "CLUE2"
         }
     },
     'CLUE_ROOM': {
-        'NAME': "Great You found a clue. The clue that will be given is to go South 2 times.",
+        'NAME': "Great You found a clue. The clue that will be given is to go South 2 times,"
+                "and then you choose where to go.",
         'DESCRIPTION': "This room is where the clue is hidden.",
 
         'PATHS': {
-            'WEST': "Sheriff dept",
-            'SOUTH': ""
+            'WEST': "YOUR_OFFICE",
+            'SOUTH': "BREAK_ROOM"
 
         }
     },
     'WEIGHT_ROOM': {
-        'NAME': "",
-        'DESCRIPTION': "",
+        'NAME': "Weight room",
+        'DESCRIPTION': "This is thw eight room where the sheriff's cary weights.",
 
         'PATHS': {
-
+            'EAST': "YOUR_OFFICE",
+            'SOUTH': "BREAK_ROOM"
         }
 
     },
     'BREAK_ROOM': {
-        'NAME': "",
-        'DESCRIPTION': "",
+        'NAME': "Break room",
+        'DESCRIPTION': "This is where you and your co-workers take breaks.",
 
         'PATHS': {
-
+            'SOUTH': "TRAINING_ROOM",
+            'WEST': "CO_WORKER_OFFICE",
+            'NORTH': "CLUE_ROOM"
         }
     },
     'TRAINING_ROOM': {
-        'NAME': "",
-        'DESCRIPTION': "",
+        'NAME': "Training room",
+        'DESCRIPTION': "This is where you or other sheriff's train",
 
         'PATHS': {
-
+            'WEST': "CLUE_ROOM2"
         }
     },
     'CLUE_ROOM2': {
-        'NAME': "",
+        'NAME': "Great you found another clue, you can go west and you will find another clue.",
         'DESCRIPTION': "",
 
         "PATHS": {
-
+            'SOUTH': "MAIN_OFFICE",
+            'NORTH': "CO_WORKER_OFFICE",
+            'WEST': "CLUE_ROOM3",
+            'EAST': "TRAINING_ROOM"
         }
     },
     'CLUE_ROOM3': {
-        'NAME': "",
-        'DESCRIPTION': "",
+        'NAME': "Another clue is to go South then you will find another clue",
+        'DESCRIPTION': "This is clue 3 do south and you will find another clue",
 
         "PATHS": {
-
+            'EAST': "CLUE_ROOM2",
+            'NORTH': "BREAK_ROOM2",
+            'SOUTH': "CLUE_ROOM4"
         }
     },
     'BREAK_ROOM2': {
-        'NAME': "",
-        'DESCRIPTION': "",
+        'NAME': "Second Break room",
+        'DESCRIPTION': "This is the second brake room",
 
         'PATHS': {
-
+            'EAST': "CO_WORKER_OFFICE",
+            'NORTH': "WEIGHT_ROOM"
         }
     },
     'CLUE_ROOM4': {
-        'NAME': "",
+        'NAME': "You found the clue, now you will go east then go west.",
         'DESCRIPTION': "",
 
         'PATHS': {
-
+            'SOUTH': "OFFICE",
+            'NORTH': "CLUE_ROOM3"
         }
     },
     'OFFICE': {
+        'NAME': "An office",
+        'DESCRIPTION': "This is a random office",
+
+        'PATHS': {
+            'NORTH': "CLUE_ROOM4",
+            'EAST': "MAIN_OFFICE"
+        }
+    },
+    'BACK_OFFICE': {
         'NAME': "",
         'DESCRIPTION': "",
 
         'PATHS': {
-
+            'SOUTH': "PARKING_LOT",
+            'WEST': "MAIN_OFFICE"
         }
     },
     'MAIN_OFFICE': {
-        'NAME': "",
+        'NAME': "Main office",
         'DESCRIPTION': "",
 
         'PATHS': {
-
+            'NORTH': "CLUE_ROOM2",
+            'WEST': "OFFICE",
+            'SOUTH': "FRONT_DOOR",
+            'EAST': "BACK_OFFICE"
         }
     },
     'FRONT_DOOR': {
-        'NAME': "",
+        'NAME': "Front door",
         'DESCRIPTION': "",
 
         'PATHS': {
-
-        }
-    },
-    'BACK_DOOR': {
-        'NAME': "",
-        'DESCRIPTION': "",
-
-        'PATHS': {
-
+            'NORTH': "BACK_OFFICE",
+            'EAST': "PARKING_LOT"
         }
     },
     'PARKING_LOT': {
-        'NAME': "",
+        'NAME': "You found the parking lot press the letter q to finish",
         'DESCRIPTION': "",
 
         'PATHS': {
-
+            'NORTH': "BACK_OFFICE",
+            'WEST': "FRONT_DOOR"
         }
-    },
-    'BACK_OFFICE_DOOR':
+    }
 }
 
 
 # Other Variables
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
-current_node = world_map['Sheriff dept']   # this is your current location
+current_node = world_map['YOUR_OFFICE']   # this is your current location
 playing = True
 
 # Controller
