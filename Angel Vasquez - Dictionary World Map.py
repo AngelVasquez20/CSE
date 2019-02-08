@@ -10,14 +10,14 @@ world_map = {
         }
     },
     'CO_WORKER_OFFICE': {
-        'NAME': "This is your co- worker's office",
+        'NAME': "This is your co-worker's office",
         'DESCRIPTION': "There are cars parked here. To "
                        "the north is the Sheriff's office",
         'PATHS': {
             'EAST': "BREAK_ROOM",
             'NORTH': "YOUR_OFFICE",
             'WEST': "BREAK_ROOM2",
-            'SOUTH': "CLUE2"
+            'SOUTH': "CLUE_ROOM2"
         }
     },
     'CLUE_ROOM': {
@@ -60,7 +60,7 @@ world_map = {
         }
     },
     'CLUE_ROOM2': {
-        'NAME': "Great you found another clue, you can go west and you will find another clue.",
+        'NAME': "Great you found a clue, you can go west and you will find another clue.",
         'DESCRIPTION': "",
 
         "PATHS": {
@@ -90,12 +90,13 @@ world_map = {
         }
     },
     'CLUE_ROOM4': {
-        'NAME': "You found the clue, now you will go east then go west.",
+        'NAME': "You found the clue, now you will go South then go East.",
         'DESCRIPTION': "",
 
         'PATHS': {
             'SOUTH': "OFFICE",
-            'NORTH': "CLUE_ROOM3"
+            'NORTH': "CLUE_ROOM3",
+            'EAST': "MAIN_OFFICE"
         }
     },
     'OFFICE': {
