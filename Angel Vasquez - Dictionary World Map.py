@@ -109,7 +109,7 @@ world_map = {
         }
     },
     'BACK_OFFICE': {
-        'NAME': "",
+        'NAME': "Back Office",
         'DESCRIPTION': "",
 
         'PATHS': {
@@ -133,7 +133,7 @@ world_map = {
         'DESCRIPTION': "",
 
         'PATHS': {
-            'NORTH': "BACK_OFFICE",
+            'NORTH': "MAIN_OFFICE",
             'EAST': "PARKING_LOT"
         }
     },
@@ -157,8 +157,7 @@ playing = True
 # Controller
 while playing:
     print(current_node['NAME'])
-
-    command = input(">_")
+    command = input(">_ ")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command in directions:
