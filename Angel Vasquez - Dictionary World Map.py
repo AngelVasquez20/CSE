@@ -1,8 +1,7 @@
 world_map = {
     'YOUR_OFFICE': {
         'NAME': "Your Office",
-        'DESCRIPTION': "This is the classroom that you are in right "
-                       "now. It has two exits to the north side.",
+        'DESCRIPTION': "This is Your work office",
         'PATHS': {
             'SOUTH': "CO_WORKER_OFFICE",
             'EAST': "CLUE_ROOM",
@@ -10,9 +9,8 @@ world_map = {
         }
     },
     'CO_WORKER_OFFICE': {
-        'NAME': "This is your co-worker's office",
-        'DESCRIPTION': "There are cars parked here. To "
-                       "the north is the Sheriff's office",
+        'NAME': "co-worker's office",
+        'DESCRIPTION': "This is your co-worker's office",
         'PATHS': {
             'EAST': "BREAK_ROOM",
             'NORTH': "YOUR_OFFICE",
