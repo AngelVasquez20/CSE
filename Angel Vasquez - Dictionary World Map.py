@@ -136,7 +136,7 @@ world_map = {
         }
     },
     'PARKING_LOT': {
-        'NAME': "You found the parking lot press the letter q to finish",
+        'NAME': "You found the parking lot",
         'DESCRIPTION': "",
 
         'PATHS': {

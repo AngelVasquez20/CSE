@@ -1,20 +1,20 @@
 class Room(object):
-    def __init__(self, name, north=None, west=None, east=None, south=None, up=None, down=None):
+    def __init__(self, name, description, north=None, west=None, east=None, south=None):
         self.name = name
+        self.description = description
         self.north = north
         self.west = west
         self.east = east
         self.south = south
-        self.up = up
-        self.down = down
 
 
-Your_office = Room("Your office", "This is your work office")
-Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office")
-Clue_Room = Room("Clue room", "This a clue room")
-Weight_Room = Room("Weight room", "This is where the workers workout")
-Break_Room = Room("Break Room", "This is where the workers take breaks")
-Training_Room = Room("training room", "This is where workers do their training")
+Your_office = Room("Your office", "This is your work office", None, "Weight_Room", "Clue_Room", "Co_Worker_office")
+Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", "Your_office", "Break_Room2",
+                        "Break_Room", "Clue_Room2")
+Clue_Room = Room("Clue room", "This a clue room", None, "Your_office", None, "Break_Room")
+Weight_Room = Room("Weight room", "This is where the workers workout", None, None, "Your_office", "Break_Room")
+Break_Room = Room("Break Room", "This is where the workers take breaks", "Clue_Room", "Co_Worker_Office", None)
+Training_Room = Room("training room", "This is where workers do their training", )
 Clue_Room2 = Room("Another clue room", "This is where another clue is at")
 Clue_Room3 = Room("third clue room", "This is where the third clue is at")
 Break_Room2 = Room("Another break room", "This is another room where the workers take brakes")
@@ -36,21 +36,31 @@ Clue_Room.west = Your_office
 Clue_Room.south = Break_Room
 Weight_Room.east = Your_office
 Weight_Room.south = Break_Room
-Break_Room.south = 
-Break_Room.west =
-Break_Room.north =
-Training_Room.west =
-Clue_Room2.south =
-Clue_Room2.east =
-Clue_Room2.west =
-Clue_Room2.north =
-Clue_Room3.east
-Clue_Room3.north
-Clue_Room3.south
-
-
-
-
-
-
-
+Break_Room.south = Training_Room
+Break_Room.west = Co_Worker_office
+Break_Room.north = Clue_Room
+Training_Room.west = Clue_Room2
+Clue_Room2.south = Main_Office
+Clue_Room2.east = Training_Room
+Clue_Room2.west = Clue_Room3
+Clue_Room2.north = Co_Worker_office
+Clue_Room3.east = Clue_Room2
+Clue_Room3.north = Break_Room2
+Clue_Room3.south = Clue_Room4
+Break_Room2.east = Co_Worker_office
+Break_Room2.north = Weight_Room
+Clue_Room4.south = Office
+Clue_Room4.north = Clue_Room3
+Clue_Room4.east = Main_Office
+Office.north = Clue_Room4
+Office.east = Main_Office
+Back_office.south = Parking_Lot
+Back_office.west = Main_Office
+Main_Office.north = Clue_Room2
+Main_Office.west = Office
+Main_Office.south = Front_Door
+Main_Office.east = Back_office
+Front_Door.north = Main_Office
+Front_Door.east = Parking_Lot
+Parking_Lot.north = Back_office
+Parking_Lot.west = Front_Door
