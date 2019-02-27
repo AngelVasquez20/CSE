@@ -33,7 +33,14 @@ class Player(object):
         return getattr(self.current_location, direction)
 
 
-Your_office = Room("Your office", "This is your work office", None, "Weight_Room", "Clue_Room", "Co_Worker_office")
+class Boss(object):
+    def __init__(self):
+        self.health = 100
+        self.strength = 100
+
+
+Your_office = Room("Your office", "This is your work office", None, "Weight_Room", "Clue_Room", "Co_Worker_office",
+                   None, None)
 Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", "Your_office", "Break_Room2",
                         "Break_Room", "Clue_Room2", None, None)
 Clue_Room = Room("Clue room", "This a clue room", None, "Your_office", None, "Break_Room", None, None)
@@ -52,12 +59,14 @@ Break_Room2 = Room("Another break room", "This is another room where the workers
 Clue_Room4 = Room("4th clue room", "This is where the 4th clue is at", "Clue_Room3", None, "Main_Office", "Office",
                   None, None)
 Office = Room("A Office", "This is a random office", "Clue_Room4", None, "Main_Office", None, None, None)
-Back_office = Room("Back office", "This is the back of the main office", None, )
-Main_Office = Room("Main office", "This is the main office", "Clue_Room2", "Office", "Back_office", "Front_Door")
-Front_Door = Room("Front door", "This is the front door either for the entrance or the exit", "Main_Office", None,
-                  "Parking_Lot", None)
-Parking_Lot = Room("Parking lot", "This is where all the worker's cars are parked at", "Back_office", "Front_Door",
+Back_office = Room("Back office", "This is the back of the main office", None, "Main_Office", None, "Parking_Lot",
                    None, None)
+Main_Office = Room("Main office", "This is the main office", "Clue_Room2", "Office", "Back_office", "Front_Door",
+                   None, None)
+Front_Door = Room("Front door", "This is the front door either for the entrance or the exit", "Main_Office", None,
+                  "Parking_Lot", None, None, None)
+Parking_Lot = Room("Parking lot", "This is where all the worker's cars are parked at", "Back_office", "Front_Door",
+                   None, None, None, None)
 
 Your_office.south = Co_Worker_office
 Your_office.east = Clue_Room
@@ -107,16 +116,18 @@ playing = True
 # Controller
 while playing:
     print(player.current_location.name)
+    print(player.current_location.description)
     command = input(">_ ")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command in directions:
         try:
             next_room = player.find_room(command)
+            if next_room is None:
+                raise KeyError
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
 
     else:
         print("Command not recognized")
-
