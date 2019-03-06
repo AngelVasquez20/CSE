@@ -14,12 +14,33 @@ class Sword(Item):
         print("You are swinging the door the sword")
 
 
-class Iron(Sword):
-    def __init__(self):
-        super(Iron, self).__init__("Iron")
-
-
 class Shield(Item):
     def __init__(self, name):
         super(Shield, self).__init__(name)
         self.health_left = 100
+
+
+class Tazer(Item):
+    def __init__(self, name):
+        super(Tazer, self).__init__(name)
+        self.damage = 100
+        self.health_left = 100
+
+
+class Helmet(Item):
+    def __init__(self, name):
+        super(Helmet, self).__init__(name)
+        self.use_left = 100
+
+
+class Knife(Item):
+    def __init__(self, name):
+        super(Knife, self).__init__(name)
+        self.damage = 100
+        self.use_left = 100
+
+
+class Laptop(Item):
+    def __init__(self, name):
+        super(Laptop, self).__init__(name)
+        self.battery_life = 100
