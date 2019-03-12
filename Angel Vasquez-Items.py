@@ -7,16 +7,15 @@ class Sword(Item):
     def __init__(self, name):
         super(Sword, self).__init__(name)
         self.protection = 100
-        self.usage = 100
+        self.usage_left = 100
 
     def swinging(self):
-        self.usage -= 1
-        print("You are swinging the door the sword")
+        self.usage_left -= 1
+        print("You are swinging the sword")
 
-
-class Wood(Sword):
-    def __init__(self):
-        super(Wood, self).__init__("Wood Sword")
+    def block(self):
+        self.protection -= 1
+        print("Used the sword as a protection")
 
 
 class Iron(Sword):
@@ -32,7 +31,12 @@ class Steel(Sword):
 class Shield(Item):
     def __init__(self, name):
         super(Shield, self).__init__(name)
-        self.health_left = 100
+        self.usage_left = 100
+        self.protection = 100
+
+    def use_shield(self):
+        self.usage_left -= 1
+        print("You use the Shield")
 
 
 class Big(Shield):
@@ -50,16 +54,25 @@ class Taser(Item):
         super(Taser, self).__init__(name)
         self.damage = 100
         self.usage_left = 100
+        self.bullets = 100
+
+    def shoot(self):
+        self.bullets -= 1
+        print("You press the button the taser turns on")
 
 
 class Tasergun(Taser):
     def __init__(self):
         super(Tasergun, self).__init__("Taser Gun")
 
+    def shoot(self):
+        self.bullets -= 1
+        print("You push the trigger and the taser shoots")
 
-class Black(Taser):
+
+class StuntGun(Taser):
     def __init__(self):
-        super(Black, self).__init__("Black Taser")
+        super(StuntGun, self).__init__("Stun gun")
 
 
 class Helmet(Item):
@@ -191,9 +204,9 @@ class LifeP(Potion):
         super(LifeP, self).__init__("Life Potion")
 
 
-class HarmfulP(Potion):
+class Power(Potion):
     def __init__(self):
-        super(HarmfulP, self).__init__("Harmful Potion")
+        super(Power, self).__init__("Power Potion")
 
 
 class Food(Item):
@@ -207,7 +220,20 @@ class Chicken(Food):
     def __init__(self):
         super(Chicken, self).__init__("Chicken")
 
-class
+
+class Pork(Food):
+    def __init__(self):
+        super(Pork, self).__init__("Pork")
+
+
+class SeaFood(Food):
+    def __init__(self):
+        super(SeaFood, self).__init__("Sea Food")
+
+
+class Eggs(Food):
+    def __init__(self):
+        super(Eggs, self).__init__("Eggs")
 
 
 class Boots(Item):
@@ -217,11 +243,26 @@ class Boots(Item):
         self.usage_left = 100
 
 
+class LeatherB(Boots):
+    def __init__(self):
+        super(LeatherB, self).__init__("Leather Boots")
+
+
 class Pills(Item):
     def __init__(self, name):
         super(Pills, self).__init__(name)
         self.damage = 50
         self.life = 20
+
+
+class Energy(Pills):
+    def __init__(self):
+        super(Energy, self).__init__("Energy Pills")
+
+
+class Strength(Pills):
+    def __init__(self):
+        super(Strength, self).__init__("Strength Pills")
 
 
 class Axe(Item):
@@ -231,7 +272,28 @@ class Axe(Item):
         self.usage_left = 100
 
 
+class Ironaxe(Axe):
+    def __init__(self):
+        super(Ironaxe, self).__init__("Steel Axe")
+
+
+class Steelaxe(Axe):
+    def __init__(self):
+        super(Steelaxe, self).__init__("Steel Axe")
+
+
 class Water(Item):
     def __init__(self, name):
         super(Water, self).__init__(name)
         self.space = 100
+        self.health = 20
+
+
+class Cold(Water):
+    def __init__(self):
+        super(Cold, self).__init__("Cold Water")
+
+
+class Hot(Water):
+    def __init__(self):
+        super(Hot, self).__init__("Hot Water")
