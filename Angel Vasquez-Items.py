@@ -285,8 +285,8 @@ class Steelaxe(Axe):
 class Water(Item):
     def __init__(self, name):
         super(Water, self).__init__(name)
-        self.space = 100
-        self.health = 20
+        self.health = 10
+        self.strength = 10
 
 
 class Cold(Water):
