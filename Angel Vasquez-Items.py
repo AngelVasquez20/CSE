@@ -6,7 +6,7 @@ class Item(object):
 class Sword(Item):
     def __init__(self, name):
         super(Sword, self).__init__(name)
-        self.protection = 100
+        self.protection = 40
         self.usage_left = 100
 
     def swinging(self):
@@ -53,11 +53,10 @@ class Taser(Item):
     def __init__(self, name):
         super(Taser, self).__init__(name)
         self.damage = 100
-        self.usage_left = 100
-        self.bullets = 100
+        self.bullets = 20
 
     def shoot(self):
-        self.bullets -= 1
+        self.damage = 100
         print("You press the button the taser turns on")
 
 
@@ -67,12 +66,7 @@ class Tasergun(Taser):
 
     def shoot(self):
         self.bullets -= 1
-        print("You push the trigger and the taser shoots")
-
-
-class StuntGun(Taser):
-    def __init__(self):
-        super(StuntGun, self).__init__("Stun gun")
+        print("You push the trigger and the taser shoots you have %s bullets left" % self.bullets)
 
 
 class Helmet(Item):
@@ -80,6 +74,11 @@ class Helmet(Item):
         super(Helmet, self).__init__(name)
         self.usage_left = 100
         self.protection = 20
+
+    def defend(self):
+        self.protection -= 5
+        self.usage_left -= 10
+        print("You have been it but the helmet helped you you have %s protection left")
 
 
 class SteelH(Helmet):
@@ -98,15 +97,45 @@ class Knife(Item):
         self.damage = 100
         self.usage_left = 100
 
+    def info(self):
+        self.damage = 1000
+        print("The knife can do 100 damage against an opponent")
+
+    def attack(self):
+        self.damage = 100
+        print("This knife can do 100 damage against an opponent")
+        self.usage_left -= 10
+        print("You attacked with the knife you have %s usage left" % self.usage_left)
+
 
 class SharpK(Knife):
     def __init__(self):
         super(SharpK, self).__init__("Sharp Knife")
+        self.damage = 1000
+        self.usage_left = 1000
+
+    def info(self):
+        self.damage = 1000
+        print("The sharp knife can do 1000 damage against an opponent")
+
+    def attack(self):
+        self.usage_left -= 10
+        print("You attacked with the sharp knife you have %s usage left" % self.usage_left)
 
 
 class Thin(Knife):
     def __init__(self):
         super(Thin, self).__init__("Thin Knife")
+        self.damage = 50
+        self.usage_left = 10
+
+    def info(self):
+        self.damage = 1000
+        print("The sharp knife can do 50 damage against an opponent")
+
+    def attack(self):
+        self.usage_left -= 5
+        print("You attacked with the tin knife you have %s usage left" % self.usage_left)
 
 
 class Laptop(Item):
@@ -114,32 +143,58 @@ class Laptop(Item):
         super(Laptop, self).__init__(name)
         self.battery_life = 100
 
+    def use(self):
+        self.battery_life -= 10
+        print("You have used the laptop your laptop has %s battery left" % self.battery_life)
+
 
 class AppleLaptop(Laptop):
     def __init__(self):
         super(AppleLaptop, self).__init__("Apple Laptop")
+
+    def use(self):
+        self.battery_life -= 10
+        print("You have used the laptop your Apple laptop has %s battery left" % self.battery_life)
 
 
 class Asus(Laptop):
     def __init__(self):
         super(Asus, self).__init__("Asus Laptop")
 
+    def use(self):
+        self.battery_life -= 10
+        print("You have used the laptop your Asus laptop has %s battery left" % self.battery_life)
 
-class ChestArmour(Item):
+
+class ChestArmor(Item):
     def __init__(self, name):
-        super(ChestArmour, self).__init__(name)
+        super(ChestArmor, self).__init__(name)
         self.usage_left = 100
         self.protection = 60
 
+    def defend(self):
+        self.usage_left -= 10
+        print("You have used your armor to protect yourself")
 
-class SteelA(ChestArmour):
+
+class SteelA(ChestArmor):
     def __init__(self):
         super(SteelA, self).__init__("Steel Armour")
+        self.protection = 100
+
+    def defend(self):
+        self.usage_left -= 10
+        print("You have used your steel armor to protect yourself you have %s usage left" % self.usage_left)
 
 
-class IronA(ChestArmour):
+class IronA(ChestArmor):
     def __init__(self):
         super(IronA, self).__init__("Iron Armour")
+        self.protection = 80
+
+    def defend(self):
+        self.usage_left -= 10
+        print("You have used your Iron armor to protect yourself you have %s usage left" % self.usage_left)
 
 
 class Gun(Item):
@@ -149,20 +204,46 @@ class Gun(Item):
         self.range = 100
         self.bullets_left = 100
 
+    def info(self):
+        self.damage = 100
+        self.range = 100
+        self.bullets_left = 100
+        print("Your gun does 100 damage, 100 range, and 100 bullets")
+
+    def shoot(self):
+        self.bullets_left -= 10
+        print("You shoot the gun you have %s bullets left" % self.bullets_left)
+
 
 class Ak47(Gun):
     def __init__(self):
         super(Ak47, self).__init__("Ak47")
+        self.range = 1000
+        self.damage = 100
+
+    def info(self):
+        self.damage = 100
+        self.range = 1000
+        self.bullets_left = 100
+        print("Your gun does 100 damage, 1000 range, and 100 bullets")
+
+    def shoot(self):
+        self.bullets_left -= 10
+        print("You shoot the AK47, you have %s bullets left" % self.bullets_left)
 
 
 class Pistol(Gun):
     def __init__(self):
         super(Pistol, self).__init__("Pistol")
+        self.range = 100
+        self.damage = 50
 
 
 class Sniper(Gun):
     def __init__(self):
         super(Sniper, self).__init__("Sniper")
+        self.range = 10000
+        self.damage = 1000
 
 
 class Clothes(Item):
@@ -297,3 +378,10 @@ class Cold(Water):
 class Hot(Water):
     def __init__(self):
         super(Hot, self).__init__("Hot Water")
+
+
+enemy_attack = Knife("Knife")
+enemy_attack.attack()
+
+angel_shoot = Tasergun()
+angel_shoot.shoot()

@@ -50,4 +50,3 @@ wiebe = Character("Wiebe", 10000000000, canoe, wiebe_armour)
 orc.attack(wiebe)
 wiebe.attack(orc)
 wiebe.attack(orc)
-
