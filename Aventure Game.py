@@ -10,24 +10,50 @@ class Room(object):
         self.down = down
 
 
+class Player(object):
+    def __init__(self, starting_location):
+        self.health = 100
+        self.strength = 100
+        self.inventory = []
+        self.current_location = starting_location
+
+    def move(self, new_location):
+        """This method moves a player to a new location
+
+        :param new_location: The room object that we move to
+        :return:
+        """
+        self.current_location = new_location
+
+    def find_room(self, direction):
+        """This method takes a direction, and finds the variable of the room.
+
+        :param direction: A String (all lowercase), with a cardinal direction
+        :return: A rom object if it exist, None if it does not
+        """
+        return getattr(self.current_location, direction)
+
+
 Your_office = Room("Your office", "This is your work office", None, "Weight_Room", "Clue_Room", "Co_Worker_office",
                    None, None)
 Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", "Your_office", "Break_Room2",
                         "Break_Room", "Clue_Room2", None, None)
-Clue_Room = Room("Clue room", "This a clue room", None, "Your_office", None, "Break_Room", None, None)
+Clue_Room = Room("Clue room", "This a clue room (The clue is to go south 2 times.)", None, "Your_office", None,
+                 "Break_Room", None, None)
 Weight_Room = Room("Weight room", "This is where the workers workout", None, None, "Your_office", "Break_Room", None,
                    None)
 Break_Room = Room("Break Room", "This is where the workers take breaks", "Clue_Room", "Co_Worker_Office", None,
                   "Training_Room", None, None)
 Training_Room = Room("training room", "This is where workers do their training", None, "Clue_Room2", None, None, None,
                      None)
-Clue_Room2 = Room("Another clue room", "This is where another clue is at", "Co_Worker_office", "Clue_Room3",
+Clue_Room2 = Room("Another clue room", "This is where another clue is at (Go West)", "Co_Worker_office", "Clue_Room3",
                   "Training_Room", "Main_Office", None, None)
-Clue_Room3 = Room("third clue room", "This is where the third clue is at", "Break_Room2", None, "Clue_Room2",
+Clue_Room3 = Room("third clue room", "This is where the third clue is at (Go South)", "Break_Room2", None, "Clue_Room2",
                   "Clue_Room4", None, None)
 Break_Room2 = Room("Another break room", "This is another room where the workers take brake", "Weight_Room", None,
                    "Co_Worker_office", None, None, None)
-Clue_Room4 = Room("4th clue room", "This is where the 4th clue is at", "Clue_Room3", None, "Main_Office", "Office",
+Clue_Room4 = Room("Clue room", "Where a clue is at (Go South then go East)", "Clue_Room3", None, "Main_Office",
+                  "Office",
                   None, None)
 Office = Room("A Office", "This is a random office", "Clue_Room4", None, "Main_Office", None, None, None)
 Back_office = Room("Back office", "This is the back of the main office", None, "Main_Office", None, "Parking_Lot",
@@ -39,7 +65,48 @@ Front_Door = Room("Front door", "This is the front door either for the entrance 
 Parking_Lot = Room("Parking lot", "This is where all the worker's cars are parked at", "Back_office", "Front_Door",
                    None, None, None, None)
 
+Your_office.south = Co_Worker_office
+Your_office.east = Clue_Room
+Your_office.west = Weight_Room
+Co_Worker_office.east = Break_Room
+Co_Worker_office.south = Clue_Room2
+Co_Worker_office.north = Your_office
+Co_Worker_office.west = Break_Room2
+Clue_Room.west = Your_office
+Clue_Room.south = Break_Room
+Weight_Room.east = Your_office
+Weight_Room.south = Break_Room
+Break_Room.south = Training_Room
+Break_Room.west = Co_Worker_office
+Break_Room.north = Clue_Room
+Training_Room.west = Clue_Room2
+Clue_Room2.south = Main_Office
+Clue_Room2.east = Training_Room
+Clue_Room2.west = Clue_Room3
+Clue_Room2.north = Co_Worker_office
+Clue_Room3.east = Clue_Room2
+Clue_Room3.north = Break_Room2
+Clue_Room3.south = Clue_Room4
+Break_Room2.east = Co_Worker_office
+Break_Room2.north = Weight_Room
+Clue_Room4.south = Office
+Clue_Room4.north = Clue_Room3
+Clue_Room4.east = Main_Office
+Office.north = Clue_Room4
+Office.east = Main_Office
+Back_office.south = Parking_Lot
+Back_office.west = Main_Office
+Main_Office.north = Clue_Room2
+Main_Office.west = Office
+Main_Office.south = Front_Door
+Main_Office.east = Back_office
+Front_Door.north = Main_Office
+Front_Door.east = Parking_Lot
+Parking_Lot.north = Back_office
+Parking_Lot.west = Front_Door
 
+
+# Items
 class Item(object):
     def __init__(self, name):
         self.name = name
@@ -571,40 +638,161 @@ class Hot(Water):
               (self.health, self.strength, self.water_left))
 
 
-enemy_attack = Knife("Knife")
-enemy_attack.attack()
+# Rooms
+world_map = {
+    'YOUR_OFFICE': {
+        'NAME': "Your Office",
+        'DESCRIPTION': "This is Your work office",
+        'PATHS': {
+            'SOUTH': "CO_WORKER_OFFICE",
+            'EAST': "CLUE_ROOM",
+            'WEST': "WEIGHT_ROOM",
+        }
+    },
+    'CO_WORKER_OFFICE': {
+        'NAME': "co-worker's office",
+        'DESCRIPTION': "This is your co-worker's office",
+        'PATHS': {
+            'EAST': "BREAK_ROOM",
+            'NORTH': "YOUR_OFFICE",
+            'WEST': "BREAK_ROOM2",
+            'SOUTH': "CLUE_ROOM2"
+        }
+    },
+    'CLUE_ROOM': {
+        'NAME': "Great You found a clue. The clue that will be given is to go South 2 times,"
+                "and then you choose where to go.",
+        'DESCRIPTION': "This room is where the clue is hidden.",
 
-angel_shoot = Tasergun()
-angel_shoot.shoot()
+        'PATHS': {
+            'WEST': "YOUR_OFFICE",
+            'SOUTH': "BREAK_ROOM"
+
+        }
+    },
+    'WEIGHT_ROOM': {
+        'NAME': "Weight room",
+        'DESCRIPTION': "This is thw eight room where the sheriff's cary weights.",
+
+        'PATHS': {
+            'EAST': "YOUR_OFFICE",
+            'SOUTH': "BREAK_ROOM"
+        }
+
+    },
+    'BREAK_ROOM': {
+        'NAME': "Break room",
+        'DESCRIPTION': "This is where you and your co-workers take breaks.",
+
+        'PATHS': {
+            'SOUTH': "TRAINING_ROOM",
+            'WEST': "CO_WORKER_OFFICE",
+            'NORTH': "CLUE_ROOM"
+        }
+    },
+    'TRAINING_ROOM': {
+        'NAME': "Training room",
+        'DESCRIPTION': "This is where you or other sheriff's train",
+
+        'PATHS': {
+            'WEST': "CLUE_ROOM2"
+        }
+    },
+    'CLUE_ROOM2': {
+        'NAME': "Great you found a clue, you can go west and you will find another clue.",
+        'DESCRIPTION': "",
+
+        "PATHS": {
+            'SOUTH': "MAIN_OFFICE",
+            'NORTH': "CO_WORKER_OFFICE",
+            'WEST': "CLUE_ROOM3",
+            'EAST': "TRAINING_ROOM"
+        }
+    },
+    'CLUE_ROOM3': {
+        'NAME': "Another clue is to go South then you will find another clue",
+        'DESCRIPTION': "This is clue 3 do south and you will find another clue",
+
+        "PATHS": {
+            'EAST': "CLUE_ROOM2",
+            'NORTH': "BREAK_ROOM2",
+            'SOUTH': "CLUE_ROOM4"
+        }
+    },
+    'BREAK_ROOM2': {
+        'NAME': "Second Break room",
+        'DESCRIPTION': "This is the second brake room",
+
+        'PATHS': {
+            'EAST': "CO_WORKER_OFFICE",
+            'NORTH': "WEIGHT_ROOM"
+        }
+    },
+    'CLUE_ROOM4': {
+        'NAME': "You found the clue, now you will go South then go East.",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+            'SOUTH': "OFFICE",
+            'NORTH': "CLUE_ROOM3",
+            'EAST': "MAIN_OFFICE"
+        }
+    },
+    'OFFICE': {
+        'NAME': "An office",
+        'DESCRIPTION': "This is a random office",
+
+        'PATHS': {
+            'NORTH': "CLUE_ROOM4",
+            'EAST': "MAIN_OFFICE"
+        }
+    },
+    'BACK_OFFICE': {
+        'NAME': "Back Office",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+            'SOUTH': "PARKING_LOT",
+            'WEST': "MAIN_OFFICE"
+        }
+    },
+    'MAIN_OFFICE': {
+        'NAME': "Main office",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+            'NORTH': "CLUE_ROOM2",
+            'WEST': "OFFICE",
+            'SOUTH': "FRONT_DOOR",
+            'EAST': "BACK_OFFICE"
+        }
+    },
+    'FRONT_DOOR': {
+        'NAME': "Front door",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+            'NORTH': "MAIN_OFFICE",
+            'EAST': "PARKING_LOT"
+        }
+    },
+    'PARKING_LOT': {
+        'NAME': "You found the parking lot",
+        'DESCRIPTION': "",
+
+        'PATHS': {
+            'NORTH': "BACK_OFFICE",
+            'WEST': "FRONT_DOOR"
+        }
+    }
+}
 
 
-class Player(object):
-    def __init__(self, starting_location):
-        self.health = 100
-        self.inventory = []
-        self.current_location = starting_location
-
-    def move(self, new_location):
-        """This method moves a player to a new location
-
-        :param new_location: The room object that we move to
-        :return:
-        """
-        self.current_location = new_location
-
-    def find_room(self, direction):
-        """This method takes a direction, and finds the variable of the room.
-
-        :param direction: A String (all lowercase), with a cardinal direction
-        :return: A rom object if it exist, None if it does not
-        """
-        return getattr(self.current_location, direction)
-
-
+# Characters
 class Boss(object):
     def __init__(self):
         self.health = 100
-        self.strength = 100
+        self.strength = 1000
 
 
 player = Player(Your_office)
