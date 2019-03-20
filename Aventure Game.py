@@ -1,5 +1,5 @@
 class Room(object):
-    def __init__(self, name, description, north=None, west=None, east=None, south=None, up=None, down=None):
+    def __init__(self, name, description, items, north=None, west=None, east=None, south=None, up=None, down=None):
         self.name = name
         self.description = description
         self.north = north
@@ -8,6 +8,7 @@ class Room(object):
         self.south = south
         self.up = up
         self.down = down
+        self.items = items
 
 
 class Player(object):
@@ -35,35 +36,35 @@ class Player(object):
 
 
 Your_office = Room("Your office", "This is your work office", None, "Weight_Room", "Clue_Room", "Co_Worker_office",
-                   None, None)
+                   None, None, "Clothes")
 Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", "Your_office", "Break_Room2",
-                        "Break_Room", "Clue_Room2", None, None)
+                        "Break_Room", "Clue_Room2", None, None, "Water")
 Clue_Room = Room("Clue room", "This a clue room (The clue is to go south 2 times.)", None, "Your_office", None,
-                 "Break_Room", None, None)
+                 "Break_Room", None, None, "Helmet")
 Weight_Room = Room("Weight room", "This is where the workers workout", None, None, "Your_office", "Break_Room", None,
-                   None)
+                   None, "Taser")
 Break_Room = Room("Break Room", "This is where the workers take breaks", "Clue_Room", "Co_Worker_Office", None,
-                  "Training_Room", None, None)
+                  "Training_Room", None, None, "Water")
 Training_Room = Room("training room", "This is where workers do their training", None, "Clue_Room2", None, None, None,
-                     None)
+                     None, "Shield")
 Clue_Room2 = Room("Another clue room", "This is where another clue is at (Go West)", "Co_Worker_office", "Clue_Room3",
-                  "Training_Room", "Main_Office", None, None)
+                  "Training_Room", "Main_Office", None, None, "Laptop")
 Clue_Room3 = Room("third clue room", "This is where the third clue is at (Go South)", "Break_Room2", None, "Clue_Room2",
-                  "Clue_Room4", None, None)
+                  "Clue_Room4", None, None, "Gun")
 Break_Room2 = Room("Another break room", "This is another room where the workers take brake", "Weight_Room", None,
-                   "Co_Worker_office", None, None, None)
+                   "Co_Worker_office", None, None, None, "Food")
 Clue_Room4 = Room("Clue room", "Where a clue is at (Go South then go East)", "Clue_Room3", None, "Main_Office",
                   "Office",
-                  None, None)
-Office = Room("A Office", "This is a random office", "Clue_Room4", None, "Main_Office", None, None, None)
+                  None, None, "Potion")
+Office = Room("A Office", "This is a random office", "Clue_Room4", None, "Main_Office", None, None, None, "Boots")
 Back_office = Room("Back office", "This is the back of the main office", None, "Main_Office", None, "Parking_Lot",
-                   None, None)
+                   None, None, "Pills")
 Main_Office = Room("Main office", "This is the main office", "Clue_Room2", "Office", "Back_office", "Front_Door",
-                   None, None)
+                   None, None, "Chest Armor")
 Front_Door = Room("Front door", "This is the front door either for the entrance or the exit", "Main_Office", None,
-                  "Parking_Lot", None, None, None)
+                  "Parking_Lot", None, None, None, "Axe")
 Parking_Lot = Room("Parking lot", "This is where all the worker's cars are parked at", "Back_office", "Front_Door",
-                   None, None, None, None)
+                   None, None, None, None, "Sword")
 
 Your_office.south = Co_Worker_office
 Your_office.east = Clue_Room
@@ -805,6 +806,8 @@ while playing:
     print(player.current_location.name)
     print(player.current_location.description)
     command = input(">_ ")
+    for items in player.current_location.items:
+        print(items.name)
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command in directions:

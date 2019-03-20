@@ -527,10 +527,3 @@ class Hot(Water):
         self.water_left -= 10
         print("You have drink the water you have %s health added, %s strength added and you have %s water left" %
               (self.health, self.strength, self.water_left))
-
-
-enemy_attack = Knife("Knife")
-enemy_attack.attack()
-
-angel_shoot = Tasergun()
-angel_shoot.shoot()
