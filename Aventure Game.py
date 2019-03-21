@@ -21,7 +21,7 @@ class Player(object):
     def move(self, new_location):
         """This method moves a player to a new location
 
-        :param new_location: The room object that we move to
+        :param new_location: The room object that we move
         :return:
         """
         self.current_location = new_location
