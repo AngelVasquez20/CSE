@@ -580,9 +580,9 @@ Break_Room = Room("Break Room", "This is where the workers take breaks", "Water"
                   "Training_Room", None, None)
 Training_Room = Room("training room", "This is where workers do their training", "Knife", None, "Clue_Room2", None,
                      None, None, None)
-Clue_Room2 = Room("Another clue room", "This is where another clue is at (Go West)", "Gun", "Co_Worker_office",
+Clue_Room2 = Room("Another clue room", "This is a clue room (Go West)", "Gun", "Co_Worker_office",
                   "Clue_Room3", "Training_Room", "Main_Office", None, None)
-Clue_Room3 = Room("third clue room", "This is where the third clue is at (Go South)", "Potion", "Break_Room2", None,
+Clue_Room3 = Room("Third clue room", "This is a room (Go South)", "Potion", "Break_Room2", None,
                   "Clue_Room2", "Clue_Room4", None, None)
 Break_Room2 = Room("Another break room", "This is another room where the workers take brake", "Clothes" "Weight_Room",
                    None, "Co_Worker_office", None, None, None)
