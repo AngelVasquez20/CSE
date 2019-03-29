@@ -34,6 +34,13 @@ class Player(object):
         """
         return getattr(self.current_location, direction)
 
+    def take_item(self, take):
+        """This takes an object to the inventory
+
+        :param take:
+        :return:
+        """
+
 
 # Items
 class Item(object):
@@ -665,6 +672,7 @@ while playing:
             if next_room is None:
                 raise KeyError
             player.move(next_room)
+            player.take_item()
         except KeyError:
             print("I can't go that way")
 
