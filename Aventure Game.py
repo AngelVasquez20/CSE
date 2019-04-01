@@ -34,13 +34,6 @@ class Player(object):
         """
         return getattr(self.current_location, direction)
 
-    def take_item(self, take):
-        """This takes an object to the inventory
-
-        :param take:
-        :return:
-        """
-
 
 # Items
 class Item(object):
@@ -663,6 +656,7 @@ while playing:
     print(player.current_location.name)
     print(player.current_location.description)
     print(player.current_location.items)
+    print(player.inventory)
     command = input(">_ ")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -672,9 +666,18 @@ while playing:
             if next_room is None:
                 raise KeyError
             player.move(next_room)
-            player.take_item()
         except KeyError:
             print("I can't go that way")
+
+    elif "take" in command:
+        item_name = self.items
+        item_found = None
+        for item in player.current_location.items:
+            if item_name == item_name:
+                item_found = item
+
+        if item_found is not None:
+            player.inventory.append(item_found)
 
     else:
         print("Command not recognized")
