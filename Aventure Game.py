@@ -567,14 +567,14 @@ class Hot(Water):
               (self.health, self.strength, self.water_left))
 
 
-Your_office = Room("Your office", "This is your work office", "Laptop", None, "Weight_Room", "Clue_Room",
+Your_office = Room("Your office", "This is your work office", "Sword", None, "Weight_Room", "Clue_Room",
                    "Co_Worker_office",
                    None, None)
 Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", "Taser", "Your_office", "Break_Room2",
                         "Break_Room", "Clue_Room2", None, None)
 Clue_Room = Room("Clue room", "This a clue room (The clue is to go south 2 times.)", "Shield", None, "Your_office",
                  None, "Break_Room", None, None)
-Weight_Room = Room("Weight room", "This is where the workers workout", "Sword", None, None, "Your_office", "Break_Room",
+Weight_Room = Room("Weight room", "This is where the workers workout", "Boots", None, None, "Your_office", "Break_Room",
                    None, None)
 Break_Room = Room("Break Room", "This is where the workers take breaks", "Water", "Clue_Room", "Co_Worker_Office", None,
                   "Training_Room", None, None)
@@ -588,7 +588,7 @@ Break_Room2 = Room("Another break room", "This is another room where the workers
                    None, "Co_Worker_office", None, None, None)
 Clue_Room4 = Room("Clue room", "Where a clue is at (Go South then go East)", "Tomahawk", "Clue_Room3", None,
                   "Main_Office", "Office", None, None)
-Office = Room("A Office", "This is a random office", "Boots" "Clue_Room4", None, "Main_Office", None, None, None)
+Office = Room("A Office", "This is a random office", "Laptop", "Clue_Room4", None, "Main_Office", None, None, None)
 Back_office = Room("Back office", "This is the back of the main office", "Armor", None, "Main_Office", None,
                    "Parking_Lot", None, None)
 Main_Office = Room("Main office", "This is the main office", "Food", "Clue_Room2", "Office", "Back_office",
@@ -670,14 +670,17 @@ while playing:
             print("I can't go that way")
 
     elif "take" in command:
-        item_name = self.items
+        item_name = command[0:]
         item_found = None
         for item in player.current_location.items:
             if item_name == item_name:
-                item_found = item
+                item_found = player.current_location.items
 
         if item_found is not None:
             player.inventory.append(item_found)
+
+        if "take" in command:
+            if player.inventory.append(ite)
 
     else:
         print("Command not recognized")

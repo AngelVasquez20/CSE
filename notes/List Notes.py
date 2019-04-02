@@ -25,11 +25,11 @@ print(fruit)
 for item in fruit:
     print(item)
 
-icecreamflavors = ["vanilla", "strawberry", "mango", "pineapple"]
-print(icecreamflavors)
+ice_cream_flavors = ["vanilla", "strawberry", "mango", "pineapple"]
+print(ice_cream_flavors)
 
-icecreamflavors[2] = "mango"
-print("The last thing in the lists is %s" % icecreamflavors[len(icecreamflavors) - 1])
+ice_cream_flavors[2] = "mango"
+print("The last thing in the lists is %s" % ice_cream_flavors[len(ice_cream_flavors) - 1])
 
 food_lists = ["pizza", "tamales", "tacos", "pie", "enchiladas", "burrito",
               "sushi", "poke", "flan", "poutine", "noodles", "chicken", "chili", "Hot wings", "salmons", "chip",
@@ -104,4 +104,3 @@ def pythagorean(a, b):
 
 
 print(pythagorean(3, 4))
-
