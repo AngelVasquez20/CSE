@@ -678,9 +678,7 @@ while playing:
 
         if item_found is not None:
             player.inventory.append(item_found)
-
-        if "take" in command:
-            if player.inventory.append(ite)
+            player
 
     else:
         print("Command not recognized")
