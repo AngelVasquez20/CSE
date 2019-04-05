@@ -50,13 +50,3 @@ wiebe = Character("Wiebe", 10000000000, canoe, wiebe_armour)
 orc.attack(wiebe)
 wiebe.attack(orc)
 wiebe.attack(orc)
-
-elif "drop" in command:
-item_name = command[0:]
-drop_item = None
-for item in player.inventory:
-    if item_name == item_name:
-        drop_item = player.current_location.items
-
-if drop_item is None:
-    print("You don't an item in your inventory")

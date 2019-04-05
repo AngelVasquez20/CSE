@@ -678,7 +678,16 @@ while playing:
 
         if item_found is not None:
             player.inventory.append(item_found)
-            player
+
+    elif "drop" in command:
+        item_name = command[0:]
+        drop_item = None
+        for item in player.inventory:
+            if item_name == item_name:
+                drop_item = player.current_location.items
+
+        if drop_item is not None:
+            player.inventory.remove(player.current_location.items)
 
     else:
         print("Command not recognized")
