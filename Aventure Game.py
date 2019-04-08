@@ -567,10 +567,10 @@ class Hot(Water):
               (self.health, self.strength, self.water_left))
 
 
-Your_office = Room("Your office", "This is your work office", "Sword", None, "Weight_Room", "Clue_Room",
+Your_office = Room("Your office", "This is your work office", Sword("Sword"), None, "Weight_Room", "Clue_Room",
                    "Co_Worker_office",
                    None, None)
-Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", "Taser", "Your_office", "Break_Room2",
+Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", Taser("Taser"), "Your_office", "Break_Room2",
                         "Break_Room", "Clue_Room2", None, None)
 Clue_Room = Room("Clue room", "This a clue room (The clue is to go south 2 times.)", "Shield", None, "Your_office",
                  None, "Break_Room", None, None)
@@ -649,15 +649,25 @@ class Boss(object):
 player = Player(Your_office)
 
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
+short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 playing = True
 
 # Controller
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
-    print(player.current_location.items)
-    print(player.inventory)
+    if player.current_location.items is not None:
+        print(player.current_location.items.name)
+    print()
+    if len(player.inventory) > 0:
+        print("You have the following items:")
+        for item in player.inventory:
+            print(item.name)
+
     command = input(">_ ")
+    if command in short_directions:
+        pos = short_directions.index(command)
+        command = directions[pos]
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command in directions:
@@ -669,25 +679,33 @@ while playing:
         except KeyError:
             print("I can't go that way")
 
-    elif "take" in command:
-        item_name = command[0:]
-        item_found = None
-        for item in player.current_location.items:
-            if item_name == item_name:
+    elif "take" in command.lower():
+        if player.current_location.items is not None:
+            item_name = command[5:]
+            item_found = None
+            if player.current_location.items.name.lower() == item_name.lower():
                 item_found = player.current_location.items
 
-        if item_found is not None:
-            player.inventory.append(item_found)
+            if item_found is not None:
+                player.inventory.append(item_found)
+                player.current_location.items = None
+        else:
+            print("There are not items here")
 
-    elif "drop" in command:
-        item_name = command[0:]
-        drop_item = None
-        for item in player.inventory:
-            if item_name == item_name:
-                drop_item = player.current_location.items
+    elif "drop" in command.lower():
+        if player.current_location.items is None:
+            item_name = command[5:]
+            drop_item = None
+            for item in player.inventory:
+                if item.name.lower() == item_name.lower():
+                    drop_item = item
 
-        if drop_item is not None:
-            player.inventory.remove(player.current_location.items)
+            if drop_item is not None:
+                player.current_location.items = drop_item
+                player.inventory.remove(drop_item)
+        else:
+            print("There is already an item here.")
 
     else:
         print("Command not recognized")
+
