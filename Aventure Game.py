@@ -570,32 +570,33 @@ class Hot(Water):
 Your_office = Room("Your office", "This is your work office", Sword("Sword"), None, "Weight_Room", "Clue_Room",
                    "Co_Worker_office",
                    None, None)
-Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", Taser("Taser"), "Your_office", "Break_Room2",
-                        "Break_Room", "Clue_Room2", None, None)
-Clue_Room = Room("Clue room", "This a clue room (The clue is to go south 2 times.)", "Shield", None, "Your_office",
-                 None, "Break_Room", None, None)
-Weight_Room = Room("Weight room", "This is where the workers workout", "Boots", None, None, "Your_office", "Break_Room",
-                   None, None)
-Break_Room = Room("Break Room", "This is where the workers take breaks", "Water", "Clue_Room", "Co_Worker_Office", None,
-                  "Training_Room", None, None)
-Training_Room = Room("training room", "This is where workers do their training", "Knife", None, "Clue_Room2", None,
-                     None, None, None)
-Clue_Room2 = Room("Another clue room", "This is a clue room (Go West)", "Gun", "Co_Worker_office",
+Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", Taser("Taser"), "Your_office",
+                        "Break_Room2", "Break_Room", "Clue_Room2", None, None)
+Clue_Room = Room("Clue room", "This a clue room (The clue is to go south 2 times.)", Shield("Shield"), None,
+                 "Your_office", None, "Break_Room", None, None)
+Weight_Room = Room("Weight room", "This is where the workers workout", Boots("Boots"), None, None, "Your_office",
+                   "Break_Room", None, None)
+Break_Room = Room("Break Room", "This is where the workers take breaks", Water("Water"), "Clue_Room",
+                  "Co_Worker_Office", None, "Training_Room", None, None)
+Training_Room = Room("training room", "This is where workers do their training", Knife("Knife"), None, "Clue_Room2",
+                     None, None, None, None)
+Clue_Room2 = Room("Another clue room", "This is a clue room (Go West)", Gun("Gun"), "Co_Worker_office",
                   "Clue_Room3", "Training_Room", "Main_Office", None, None)
-Clue_Room3 = Room("Third clue room", "This is a room (Go South)", "Potion", "Break_Room2", None,
+Clue_Room3 = Room("Third clue room", "This is a room (Go South)", Potion("Potion"), "Break_Room2", None,
                   "Clue_Room2", "Clue_Room4", None, None)
-Break_Room2 = Room("Another break room", "This is another room where the workers take brake", "Clothes" "Weight_Room",
-                   None, "Co_Worker_office", None, None, None)
-Clue_Room4 = Room("Clue room", "Where a clue is at (Go South then go East)", "Tomahawk", "Clue_Room3", None,
+Break_Room2 = Room("Another break room", "This is another room where the workers take brake", Clothes("Clothes"),
+                   "Weight_Room",  None, "Co_Worker_office", None, None, None)
+Clue_Room4 = Room("Clue room", "Where a clue is at (Go South then go East)", Tomahawk("Tomahawk"), "Clue_Room3", None,
                   "Main_Office", "Office", None, None)
-Office = Room("A Office", "This is a random office", "Laptop", "Clue_Room4", None, "Main_Office", None, None, None)
-Back_office = Room("Back office", "This is the back of the main office", "Armor", None, "Main_Office", None,
+Office = Room("A Office", "This is a random office", Laptop("Laptop"), "Clue_Room4", None, "Main_Office", None, None,
+              None)
+Back_office = Room("Back office", "This is the back of the main office", Armor("Armor"), None, "Main_Office", None,
                    "Parking_Lot", None, None)
-Main_Office = Room("Main office", "This is the main office", "Food", "Clue_Room2", "Office", "Back_office",
+Main_Office = Room("Main office", "This is the main office", Food("Food"), "Clue_Room2", "Office", "Back_office",
                    "Front_Door", None, None)
-Front_Door = Room("Front door", "This is the front door either for the entrance or the exit", "Pills", "Main_Office",
-                  None, "Parking_Lot", None, None, None)
-Parking_Lot = Room("Parking lot", "This is where all the worker's cars are parked at", "Helmet", "Back_office",
+Front_Door = Room("Front door", "This is the front door either for the entrance or the exit", Pills("Pills"),
+                  "Main_Office", None, "Parking_Lot", None, None, None)
+Parking_Lot = Room("Parking lot", "This is where all the worker's cars are parked at", Helmet("Helmet"), "Back_office",
                    "Front_Door", None, None, None, None)
 
 Your_office.south = Co_Worker_office
@@ -645,6 +646,10 @@ class Boss(object):
         self.health = 100
         self.strength = 1000
 
+class Orc(object):
+    def __init__(self):
+        self.health = 50
+        self.strength = 50
 
 player = Player(Your_office)
 
@@ -706,6 +711,8 @@ while playing:
         else:
             print("There is already an item here.")
 
+    elif "attack" in command.lower():
+        
+
     else:
         print("Command not recognized")
-
