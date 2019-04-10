@@ -646,10 +646,12 @@ class Boss(object):
         self.health = 100
         self.strength = 1000
 
+
 class Orc(object):
     def __init__(self):
         self.health = 50
         self.strength = 50
+
 
 player = Player(Your_office)
 
@@ -710,9 +712,5 @@ while playing:
                 player.inventory.remove(drop_item)
         else:
             print("There is already an item here.")
-
-    elif "attack" in command.lower():
-        
-
     else:
         print("Command not recognized")
