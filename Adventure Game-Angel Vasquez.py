@@ -1,8 +1,10 @@
 class Room(object):
-    def __init__(self, name, description, items, north=None, west=None, east=None, south=None, up=None, down=None):
+    def __init__(self, name, description, items, enemy, north=None, west=None, east=None, south=None, up=None,
+                 down=None):
         self.name = name
         self.description = description
         self.items = items
+        self.enemy = enemy
         self.north = north
         self.west = west
         self.east = east
@@ -567,9 +569,31 @@ class Hot(Water):
               (self.health, self.strength, self.water_left))
 
 
-Your_office = Room("Your office", "This is your work office", Sword("Sword"), None, "Weight_Room", "Clue_Room",
-                   "Co_Worker_office",
-                   None, None)
+class Characters(object):
+    def __init__(self, orc, stick, armor):
+        self.name = orc
+        self.health = 50
+        self.weapons = stick
+        self.armor = armor
+
+    def take_damage(self, damage):
+        if damage < self.armor.armor_amt:
+            print("No damage is done because some FABULOUS armor!")
+        else:
+            self.health -= damage - self.armor.armor_amt
+            if self.health < 0:
+                self.health = 0
+                print("%s has fallen" % self.name)
+        print("%s has %d health left" % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attack %s for %d damage" % (self.name, target.name, self.weapons.damage))
+        target.take_damage(self.weapons.damage)
+
+
+Your_office = Room("Your office", "This is your work office", Sword("Sword"),
+                   "There's a Orc(Put attack Orc to atttack it)",
+                   None, "Weight_Room", "Clue_Room", "Co_Worker_office", None, None)
 Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", Taser("Taser"), "Your_office",
                         "Break_Room2", "Break_Room", "Clue_Room2", None, None)
 Clue_Room = Room("Clue room", "This a clue room (The clue is to go south 2 times.)", Shield("Shield"), None,
@@ -641,16 +665,21 @@ Parking_Lot.west = Front_Door
 
 
 # Characters
-class Boss(object):
+class Enemy(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Boss(Enemy):
     def __init__(self):
+        super(Boss, self).__init__("Boss")
         self.health = 100
-        self.strength = 1000
 
 
 class Orc(object):
     def __init__(self):
+        super(Orc, self).__init__("Orc")
         self.health = 50
-        self.strength = 50
 
 
 player = Player(Your_office)
@@ -670,6 +699,7 @@ while playing:
         print("You have the following items:")
         for item in player.inventory:
             print(item.name)
+    print(player.current_location.enemy)
 
     command = input(">_ ")
     if command in short_directions:
@@ -712,5 +742,12 @@ while playing:
                 player.inventory.remove(drop_item)
         else:
             print("There is already an item here.")
+
+    elif "attack" in command.lower():
+        if player.current_location.enemy is None:
+            enemy_name = command[5:]
+            attack_enemy = None
+            for enemy in player.current_location:
+                if enemy.name.lower() == 
     else:
         print("Command not recognized")
