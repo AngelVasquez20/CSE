@@ -1,10 +1,8 @@
 class Room(object):
-    def __init__(self, name, description, items, enemy, north=None, west=None, east=None, south=None, up=None,
-                 down=None):
+    def __init__(self, name, description, items, north=None, west=None, east=None, south=None, up=None, down=None):
         self.name = name
         self.description = description
         self.items = items
-        self.enemy = enemy
         self.north = north
         self.west = west
         self.east = east
@@ -591,9 +589,8 @@ class Characters(object):
         target.take_damage(self.weapons.damage)
 
 
-Your_office = Room("Your office", "This is your work office", Sword("Sword"),
-                   "There's a Orc(Put attack Orc to atttack it)",
-                   None, "Weight_Room", "Clue_Room", "Co_Worker_office", None, None)
+Your_office = Room("Your office", "This is your work office", Sword("Sword"), None, "Weight_Room", "Clue_Room",
+                   "Co_Worker_office", None)
 Co_Worker_office = Room("Co-worker's office", "This is your co-worker's office", Taser("Taser"), "Your_office",
                         "Break_Room2", "Break_Room", "Clue_Room2", None, None)
 Clue_Room = Room("Clue room", "This a clue room (The clue is to go south 2 times.)", Shield("Shield"), None,
@@ -699,7 +696,6 @@ while playing:
         print("You have the following items:")
         for item in player.inventory:
             print(item.name)
-    print(player.current_location.enemy)
 
     command = input(">_ ")
     if command in short_directions:
@@ -742,12 +738,5 @@ while playing:
                 player.inventory.remove(drop_item)
         else:
             print("There is already an item here.")
-
-    elif "attack" in command.lower():
-        if player.current_location.enemy is None:
-            enemy_name = command[5:]
-            attack_enemy = None
-            for enemy in player.current_location:
-                if enemy.name.lower() == 
     else:
         print("Command not recognized")
