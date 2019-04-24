@@ -13,7 +13,7 @@
     <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez_Fix_It.coverage" NAME="Angel Vasquez-Fix It Coverage Results" MODIFIED="1544134725717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1553549279021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Hangman__Angel_Vasquez.coverage" NAME="Hangman- Angel Vasquez Coverage Results" MODIFIED="1554239387806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Adventure_Game_Angel_Vasquez.coverage" NAME="Adventure Game-Angel Vasquez Coverage Results" MODIFIED="1556054420132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Adventure_Game_Angel_Vasquez.coverage" NAME="Adventure Game-Angel Vasquez Coverage Results" MODIFIED="1556140278847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1553031298521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$World_Map_O_O_P.coverage" NAME="World Map O.O.P Coverage Results" MODIFIED="1553290130425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1553549325874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -25,6 +25,7 @@
     <SUITE FILE_PATH="coverage/CSE$nufvjd.coverage" NAME="nufvjd Coverage Results" MODIFIED="1551390583972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1553549333218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez_Items.coverage" NAME="Angel Vasquez-Items Coverage Results" MODIFIED="1552598795721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$CSVNotes.coverage" NAME="CSVNotes Coverage Results" MODIFIED="1556141486755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Lucky_7_s.coverage" NAME="Lucky 7's Coverage Results" MODIFIED="1543268983498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Challenge_1.coverage" NAME="Challenge 1 Coverage Results" MODIFIED="1544047745929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez_Lucky_7_s.coverage" NAME="Angel Vasquez-Lucky 7's Coverage Results" MODIFIED="1546900398500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -54,7 +55,7 @@
     <session id="-169559174">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="77" />
+          <entry key="project.closed" value="78" />
           <entry key="project.open.time.114" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -66,7 +67,7 @@
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="3" />
-          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.36" value="3" />
           <entry key="project.open.time.37" value="3" />
           <entry key="project.open.time.38" value="6" />
           <entry key="project.open.time.39" value="4" />
@@ -99,34 +100,36 @@
           <entry key="project.open.time.82" value="1" />
           <entry key="project.open.time.86" value="1" />
           <entry key="project.open.time.87" value="1" />
-          <entry key="project.opened" value="79" />
+          <entry key="project.opened" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="csv" value="1" />
           <entry key="gitattributes" value="1" />
           <entry key="pstat" value="2" />
-          <entry key="py" value="121" />
+          <entry key="py" value="123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Profiler Session" value="2" />
-          <entry key="Python" value="118" />
-          <entry key="Scratch" value="3" />
+          <entry key="Python" value="119" />
+          <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="85" />
-          <entry key="py" value="64192" />
+          <entry key="dummy" value="86" />
+          <entry key="py" value="64370" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="85" />
-          <entry key="Python" value="64192" />
+          <entry key="PLAIN_TEXT" value="86" />
+          <entry key="Python" value="64362" />
+          <entry key="Scratch" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -138,11 +141,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Adventure Game-Angel Vasquez.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="742" lean-forward="true" selection-start-line="742" selection-end-line="742" />
+            <state relative-caret-position="8">
+              <caret line="709" column="30" lean-forward="true" selection-start-line="709" selection-start-column="30" selection-end-line="709" selection-end-column="30" />
               <folding>
                 <marker date="1556054463222" expanded="true" signature="1125:1126" ph="..." />
                 <marker date="1556054463222" expanded="true" signature="15357:16077" ph="..." />
@@ -151,6 +154,15 @@
                 <marker date="1556054463222" expanded="true" signature="20067:20160" ph="..." />
                 <marker date="1556054463222" expanded="true" signature="20159:20160" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSVNotes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -205,6 +217,9 @@
         <option value="$PROJECT_DIR$/Notes.py" />
         <option value="$PROJECT_DIR$/Aventure Game.py" />
         <option value="$PROJECT_DIR$/Adventure Game-Angel Vasquez.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$PROJECT_DIR$/CSYNotes.py" />
+        <option value="$PROJECT_DIR$/CSVNotes.py" />
       </list>
     </option>
   </component>
@@ -252,6 +267,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bk9x\Documents\GitHub\CSE" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -264,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Adventure Game-Angel Vasquez">
+  <component name="RunManager" selected="Python.CSVNotes">
     <configuration name="Adventure Game-Angel Vasquez" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -331,6 +351,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="CSVNotes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CSVNotes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Hangman- Angel Vasquez" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -375,43 +417,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CSE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Notes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.Angel Vasquez-Hangman" />
       <item itemvalue="Python.Aventure Game" />
-      <item itemvalue="Python.Notes" />
       <item itemvalue="Python.Hangman- Angel Vasquez" />
       <item itemvalue="Python.List Notes" />
       <item itemvalue="Python.Adventure Game-Angel Vasquez" />
+      <item itemvalue="Python.CSVNotes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CSVNotes" />
         <item itemvalue="Python.Adventure Game-Angel Vasquez" />
         <item itemvalue="Python.Aventure Game" />
         <item itemvalue="Python.List Notes" />
         <item itemvalue="Python.Hangman- Angel Vasquez" />
-        <item itemvalue="Python.Notes" />
       </list>
     </recent_temporary>
   </component>
@@ -441,12 +461,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49508196" visible="true" weight="0.33509833" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49508196" visible="true" weight="0.34039333" />
       <window_info id="Favorites" order="1" sideWeight="0.50491804" side_tool="true" weight="0.32829046" />
       <window_info id="Structure" order="2" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984448" weight="0.68524593" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4984448" visible="true" weight="0.66885245" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -492,6 +512,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -500,7 +523,6 @@
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
     <entry file="file://$PROJECT_DIR$/notes/Angel Vasquez-Fix It.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -644,10 +666,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Book1.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Adventure Game-Angel Vasquez.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="742" lean-forward="true" selection-start-line="742" selection-end-line="742" />
+        <state relative-caret-position="8">
+          <caret line="709" column="30" lean-forward="true" selection-start-line="709" selection-start-column="30" selection-end-line="709" selection-end-column="30" />
           <folding>
             <marker date="1556054463222" expanded="true" signature="1125:1126" ph="..." />
             <marker date="1556054463222" expanded="true" signature="15357:16077" ph="..." />
@@ -656,6 +688,13 @@
             <marker date="1556054463222" expanded="true" signature="20067:20160" ph="..." />
             <marker date="1556054463222" expanded="true" signature="20159:20160" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSVNotes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
