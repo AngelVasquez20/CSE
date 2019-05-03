@@ -2,12 +2,6 @@ test_num = "4556737586899855"
 print(test_num)
 
 
-def divisible_by_even_num(num: str):
-    even_num = int(num[::2])
-    if even_num
-
-
-
 def remove_num(string):
     return string[:15]
 
@@ -26,6 +20,15 @@ def validate(num: str):
     for index in range(len(list_nums)):
         list_nums[index] = int(list_nums[index])
         print(list_nums)
+
+
+def multiply_even_num(num: list):
+    for index in range(len(num)):
+        num[index] = int(num[index])
+        if index % 2 == 0:
+            num[index] *= 2
+            if num[index] > 9:
+                num[index] -= 9
 
 
 print(validate(test_num))
