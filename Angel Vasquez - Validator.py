@@ -27,7 +27,8 @@ def mod_10(total_sum, last_digit):
 
 
 def validate(num: str):
-    test_num = test_num
+    test_num = list(num)
+    multiply_even_num(test_num)
     cut_nums = remove_num(test_num[:15])
     reversed_nums = reverse_it(cut_nums)
     list_nums = list(reversed_nums)
@@ -35,7 +36,6 @@ def validate(num: str):
     for index in range(len(list_nums)):
         list_nums[index] = int(list_nums[index])
         print(list_nums)
-        multiply_even_num(test_num)
 
 
 print(validate(test_num))
