@@ -35,7 +35,6 @@ def validate(num: str):
     print(list_nums)
     for index in range(len(list_nums)):
         list_nums[index] = int(list_nums[index])
-        print(list_nums)
 
 
 print(validate(test_num))
