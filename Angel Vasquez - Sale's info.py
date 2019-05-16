@@ -2,13 +2,13 @@ import csv
 
 with open("Sales Records.csv", "r") as csv_file_thing:
     # Region
-    asia_total_profit = 0
-    australia_and_Oceania_profit = 0
-    central_America_and_the_Caribbean_profit = 0
-    europe_profit = 0
-    middle_east_and_north_africa_profit = 0
-    north_america_profit = 0
-    sub_saharan_africa_profit = 0
+    asia_total = 0
+    australia_and_Oceania_total = 0
+    central_America_and_the_Caribbean_total = 0
+    europe_total = 0
+    middle_east_and_north_africa_total = 0
+    north_america_total = 0
+    sub_saharan_africa_total = 0
     # Items
     fruits_total = 0
     clothes_total = 0
@@ -23,50 +23,90 @@ with open("Sales Records.csv", "r") as csv_file_thing:
     baby_food_total = 0
     cereal_total = 0
     reader = csv.reader(csv_file_thing)
+    # Units
+    fruits_units_total = 0
+    clothes_units_total = 0
+    meat_units_total = 0
+    beverages_units_total = 0
+    office_supplies_units_total = 0
+    cosmetics_units_total = 0
+    snacks_units_total = 0
+    personal_care_units_total = 0
+    household_units_total = 0
+    vegetables_units_total = 0
+    baby_food_units_total = 0
+    cereal_units_total = 0
     for row in reader:
         profit = row[13]
         items = row[2]
         region = row[0]
+        units_sold = row[8]
         # Items
         if items == "Fruits":
             fruits_total += float(profit)
+            fruits_units_total += int(units_sold)
         if items == "Clothes":
             clothes_total += float(profit)
+            clothes_units_total += int(units_sold)
         if items == "Meat":
             meat_total += float(profit)
+            meat_units_total += int(units_sold)
         if items == "Beverages":
             beverages_total += float(profit)
         if items == "Office Supplies":
             office_supplies_total += float(profit)
+            office_supplies_units_total += int(units_sold)
         if items == "Cosmetics":
             cosmetics_total += float(profit)
+            cosmetics_units_total += int(units_sold)
         if items == "Snacks":
             snacks_total += float(profit)
+            snacks_units_total += int(units_sold)
         if items == "Personal Care":
             personal_care_total += float(profit)
+            personal_care_units_total += int(units_sold)
         if items == "Household":
             household_total += float(profit)
+            household_units_total += int(units_sold)
         if items == "Vegetables":
             vegetables_total += float(profit)
+            vegetables_units_total += int(units_sold)
         if items == "Baby Food":
             baby_food_total += float(profit)
+            baby_food_units_total += int(units_sold)
         if items == "Cereal":
             cereal_total += float(profit)
+            cereal_units_total += int(units_sold)
         # Region
         if region == "Asia":
-            asia_total_profit += float(profit)
+            asia_total += float(profit)
         if region == "Australia and Oceania":
-            australia_and_Oceania_profit += float(profit)
+            australia_and_Oceania_total += float(profit)
         if region == "Central America and the Caribbean":
-            central_America_and_the_Caribbean_profit += float(profit)
+            central_America_and_the_Caribbean_total += float(profit)
         if region == "Europe":
-            europe_profit += float(profit)
+            europe_total += float(profit)
         if region == "Middle East and North Africa":
-            middle_east_and_north_africa_profit += float(profit)
+            middle_east_and_north_africa_total += float(profit)
         if region == "North America":
-            north_america_profit += float(profit)
+            north_america_total += float(profit)
         if region == "Sub-Saharan Africa":
-            sub_saharan_africa_profit += float(profit)
+            sub_saharan_africa_total += float(profit)
+
+fruits_units_average = fruits_total / fruits_units_total
+clothes_units_average = clothes_total / clothes_units_total
+meat_units_average = meat_total / meat_units_total
+beverages_units_average = beverages_total / beverages_units_total
+office_supplies_units_average = office_supplies_total / office_supplies_units_total
+cosmetics_units_average = cosmetics_total / cosmetics_units_total
+snacks_units_average = snacks_total / snacks_units_total
+personal_care_units_average = personal_care_total / personal_care_units_total
+household_units_average = household_total / household_units_total
+vegetables_units_average = vegetables_total / vegetables_units_total
+baby_food_units_average = baby_food_total / baby_food_units_total
+cereal_units_average = cereal_total / cereal_units_total
+
+print("The average ")
 
 
 print("Fruits total profit = ", fruits_total)
@@ -91,16 +131,16 @@ list_type = ["Fruits", "Clothes", "Meat", "Beverages", "Office Supplies", "Cosme
              "Household", "Vegetables", "Baby food", "Cereal"]
 
 index = list_total.index(max(list_total))
-print("Most profit = %s" % list_type[index])
+print("Item with the highest profit = %s" % list_type[index])
 
 print()
 
-region_total = [asia_total_profit, australia_and_Oceania_profit, central_America_and_the_Caribbean_profit,
-                europe_profit, middle_east_and_north_africa_profit, north_america_profit, sub_saharan_africa_profit]
+region_total = [asia_total, australia_and_Oceania_total, central_America_and_the_Caribbean_total,
+                europe_total, middle_east_and_north_africa_total, north_america_total, sub_saharan_africa_total]
 
 
 region_type = ["Asia", "Australia and Oceania", "Central America and the Caribbean", "Europe",
                "Middle East and North Africa", "North America", "Sub-Saharan Africa"]
 
 region_index = region_total.index(max(region_total))
-print("The region with the most profit = %s" % region_type[index])
+print("The region with the highest profit = %s" % region_type[region_index])
