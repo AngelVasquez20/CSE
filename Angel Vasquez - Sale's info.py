@@ -53,6 +53,7 @@ with open("Sales Records.csv", "r") as csv_file_thing:
             meat_units_total += int(units_sold)
         if items == "Beverages":
             beverages_total += float(profit)
+            beverages_units_total += int(units_sold)
         if items == "Office Supplies":
             office_supplies_total += float(profit)
             office_supplies_units_total += int(units_sold)
@@ -106,8 +107,6 @@ vegetables_units_average = vegetables_total / vegetables_units_total
 baby_food_units_average = baby_food_total / baby_food_units_total
 cereal_units_average = cereal_total / cereal_units_total
 
-print("The average ")
-
 
 print("Fruits total profit = ", fruits_total)
 print("Clothes total profit = ", clothes_total)
@@ -142,5 +141,43 @@ region_total = [asia_total, australia_and_Oceania_total, central_America_and_the
 region_type = ["Asia", "Australia and Oceania", "Central America and the Caribbean", "Europe",
                "Middle East and North Africa", "North America", "Sub-Saharan Africa"]
 
+print("Total profit for Asia = ", asia_total)
+print("Total profit for Australia and Ocean = ", australia_and_Oceania_total)
+print("Total profit for Central America and the Caribbean = ", central_America_and_the_Caribbean_total)
+print("Total profit for Europe = ", europe_total)
+print("Total profit for Middle East and North Africa = ", middle_east_and_north_africa_total)
+print("Total profit for North America = ", north_america_total)
+print("Total profit for Sub-Saharan Africa = ", sub_saharan_africa_total)
+
+print()
+
 region_index = region_total.index(max(region_total))
 print("The region with the highest profit = %s" % region_type[region_index])
+
+print()
+
+print("The units sold for fruits = ", fruits_units_average)
+print("The units sold for clothes = ", clothes_units_average)
+print("The units sold for meat = ", meat_units_average)
+print("The units sold for beverages = ", beverages_units_average)
+print("The units sold for office supplies = ", office_supplies_units_average)
+print("The units sold for baby food = ", baby_food_units_average)
+print("The units sold for cosmetics = ", cosmetics_units_average)
+print("The units sold for snacks = ", snacks_units_average)
+print("The units sold for personal care = ", personal_care_units_average)
+print("The units sold for household = ", household_units_average)
+print("The units sold for vegetables = ", vegetables_units_average)
+print("The units sold for cereal = ", cereal_units_average)
+
+units_average = [fruits_units_average, clothes_units_average, meat_units_average, baby_food_units_average,
+                 office_supplies_units_average, cosmetics_units_average,
+                 snacks_units_average, personal_care_units_average, household_units_average, vegetables_units_average,
+                 baby_food_units_average, cereal_units_average]
+
+units_type = ["Fruits", "Clothes", "Meat", "Beverages", "Office Supplies", "Cosmetics", "Snacks", "Personal",
+              "Household", "Vegetables", "Baby food", "Cereal"]
+
+print()
+
+units_index = units_average.index(max(units_average))
+print("The Item with the most units sold = %s" % units_type[units_index])

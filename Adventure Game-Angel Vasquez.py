@@ -738,5 +738,8 @@ while playing:
                 player.inventory.remove(drop_item)
         else:
             print("There is already an item here.")
+    elif "take" in command.lower():
+        if player.current_location.items is None:
+            item_name = command[5:]
     else:
         print("Command not recognized")
