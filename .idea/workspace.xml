@@ -59,33 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSVNotes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
+            <state relative-caret-position="841">
               <caret line="84" selection-start-line="84" selection-end-line="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sales Records.csv">
-          <provider editor-type-id="LargeFileEditor">
-            <state relative-caret-position="408">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="csv-data-editor">
-            <state>
-              <format>
-                <csv-format name="Comma-separated (CSV)" id="Comma-separated (CSV)_id">
-                  <data>
-                    <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator="," recordSeparator="&#10;">
-                      <quotation>
-                        <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                        <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                      </quotation>
-                    </record-format>
-                  </data>
-                </csv-format>
-              </format>
             </state>
           </provider>
         </entry>
@@ -93,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Angel Vasquez - Sale's info.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="177" column="63" lean-forward="true" selection-start-line="177" selection-start-column="63" selection-end-line="177" selection-end-column="63" />
+            <state relative-caret-position="1164">
+              <caret line="107" column="56" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -102,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Adventure Game-Angel Vasquez.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="742" column="34" selection-start-line="742" selection-start-column="34" selection-end-line="742" selection-end-column="34" />
+            <state relative-caret-position="705">
+              <caret line="746" selection-start-line="746" selection-end-line="746" />
             </state>
           </provider>
         </entry>
@@ -404,12 +379,13 @@
       <workItem from="1557953043246" duration="3285000" />
       <workItem from="1558039365729" duration="3378000" />
       <workItem from="1558126795104" duration="53000" />
-      <workItem from="1558126868203" duration="2701000" />
+      <workItem from="1558126868203" duration="2895000" />
+      <workItem from="1558467104565" duration="6286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50291000" />
+    <option name="totallyTimeSpent" value="56771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,9 +397,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49508196" visible="true" weight="0.19349681" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49508196" visible="true" weight="0.195629" />
       <window_info id="Favorites" order="1" sideWeight="0.50491804" side_tool="true" weight="0.32829046" />
       <window_info id="Structure" order="2" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -436,7 +413,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5015552" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.4984448" visible="true" weight="0.29685807" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.4984448" weight="0.9674973" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32719395" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
@@ -456,9 +433,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CSE$CSVNotes.coverage" NAME="CSVNotes Coverage Results" MODIFIED="1556654575926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Hangman__Angel_Vasquez.coverage" NAME="Hangman- Angel Vasquez Coverage Results" MODIFIED="1556656179257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Adventure_Game_Angel_Vasquez.coverage" NAME="Adventure Game-Angel Vasquez Coverage Results" MODIFIED="1558041393784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Adventure_Game_Angel_Vasquez.coverage" NAME="Adventure Game-Angel Vasquez Coverage Results" MODIFIED="1558470426636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$notes_for_validator.coverage" NAME="notes for validator Coverage Results" MODIFIED="1556919925616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez___Sale_s_info.coverage" NAME="Angel Vasquez - Sale's info Coverage Results" MODIFIED="1558129182516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez___Sale_s_info.coverage" NAME="Angel Vasquez - Sale's info Coverage Results" MODIFIED="1558471510243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1556659565572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Validator.coverage" NAME="Validator Coverage Results" MODIFIED="1557351116900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Angel_Vasquez___Validator.coverage" NAME="Angel Vasquez - Validator Coverage Results" MODIFIED="1558040280355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -655,13 +632,6 @@
     <entry file="file://$PROJECT_DIR$/Sales Recored Notes.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSVNotes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sales Records.csv">
       <provider editor-type-id="LargeFileEditor">
         <state relative-caret-position="408">
@@ -685,17 +655,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CSVNotes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Adventure Game-Angel Vasquez.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="742" column="34" selection-start-line="742" selection-start-column="34" selection-end-line="742" selection-end-column="34" />
+        <state relative-caret-position="705">
+          <caret line="746" selection-start-line="746" selection-end-line="746" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Angel Vasquez - Sale's info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="177" column="63" lean-forward="true" selection-start-line="177" selection-start-column="63" selection-end-line="177" selection-end-column="63" />
+        <state relative-caret-position="1164">
+          <caret line="107" column="56" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="56" />
         </state>
       </provider>
     </entry>
