@@ -50,3 +50,15 @@ wiebe = Character("Wiebe", 10000000000, canoe, wiebe_armour)
 orc.attack(wiebe)
 wiebe.attack(orc)
 wiebe.attack(orc)
+
+# elif "use" in command.lower():
+# if player.current_location.items is None:
+#     item_name = command[5:]
+#     use_item = None
+#     for item in player.inventory:
+#         if item.name.lower() == item_name.lower():
+#             use_item = item
+#
+#     if use_item is not None:
+#         player.current_location.items = use_item
+#         player.current_location.use(use_item)
